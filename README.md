@@ -29,7 +29,7 @@ Will be added
 
 1. Denoising micro-doppler signatures:
 ![alt text](https://github.com/anasmobasher/gan-cyclegan/blob/main/docs/pics/results1.png?raw=true)
-![alt text](https://github.com/anasmobasher/gan-cyclegan/blob/main/docs/pics/results1_quant.PNG?raw=true)
+![alt text](https://github.com/anasmobasher/gan-cyclegan/blob/main/docs/pics/Results1_quant.PNG?raw=true)
 3. Superresolution micro-doppler signatures:
 ![alt text](https://github.com/anasmobasher/gan-cyclegan/blob/main/docs/pics/results2.png?raw=true)
 ![alt text](https://github.com/anasmobasher/gan-cyclegan/blob/main/docs/pics/results2_quant.png?raw=true)
