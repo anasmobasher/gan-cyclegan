@@ -1,0 +1,313 @@
+pyenv-virtualenv: prompt changing will be removed from future release. configure `export PYENV_VIRTUALENV_DISABLE_PROMPT=1' to simulate the behavior.
+The code will run on GPU.
+torch.Size([9, 3, 256, 256])
+The code will run on GPU.etrf3o
+g21 Parameters
+Discriminator Parameters
+14512
+Step [8707/10000000], loss_g: 1.4577, loss_identity: 0.5888, loss_GAN: 1.0759, loss_cycle: 0.0366, percep_loss_total: 0.3158, loss_d1: 0.6070, loss_d2: 0.2228, lr_d:0.00070, lr_g:0.00070 ,Epoch: 1.0
+End of epoch1/200 Time Taken:5161.918402282        Accuracy_best:0 ..Epoch:0
+Step [17414/10000000], loss_g: 0.6738, loss_identity: 0.5778, loss_GAN: 0.5437, loss_cycle: 0.0122, percep_loss_total: 0.3049, loss_d1: 0.2359, loss_d2: 0.4021, lr_d:0.00070, lr_g:0.00070 ,Epoch: 2.0
+End of epoch2/200 Time Taken:5279.587741232999        Accuracy_best:0 ..Epoch:0
+Step [26121/10000000], loss_g: 0.5195, loss_identity: 0.2704, loss_GAN: 0.4179, loss_cycle: 0.0096, percep_loss_total: 0.4003, loss_d1: 0.3021, loss_d2: 0.2315, lr_d:0.00070, lr_g:0.00070 ,Epoch: 3.0
+End of epoch3/200 Time Taken:5287.855191024        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-3-m-s.png
+saved ./samples/c2n/sample-3-s-m.png
+Denoise_gait2.py:692: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:708: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Step [34828/10000000], loss_g: 0.4602, loss_identity: 0.3155, loss_GAN: 0.3129, loss_cycle: 0.0142, percep_loss_total: 0.4098, loss_d1: 0.2117, loss_d2: 0.2484, lr_d:0.00070, lr_g:0.00070 ,Epoch: 4.0
+End of epoch4/200 Time Taken:5297.584879818998        Accuracy_best:0 ..Epoch:0
+Step [43535/10000000], loss_g: 0.7161, loss_identity: 0.2695, loss_GAN: 0.6414, loss_cycle: 0.0067, percep_loss_total: 0.3497, loss_d1: 0.1565, loss_d2: 0.1513, lr_d:0.00070, lr_g:0.00070 ,Epoch: 5.0
+End of epoch5/200 Time Taken:5305.425440049999        Accuracy_best:0 ..Epoch:0
+Step [52242/10000000], loss_g: 0.3718, loss_identity: 0.2352, loss_GAN: 0.3216, loss_cycle: 0.0046, percep_loss_total: 0.2442, loss_d1: 0.1962, loss_d2: 0.2835, lr_d:0.00070, lr_g:0.00070 ,Epoch: 6.0
+End of epoch6/200 Time Taken:5286.573206402001        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-6-m-s.png
+saved ./samples/c2n/sample-6-s-m.png
+Step [60949/10000000], loss_g: 0.3742, loss_identity: 0.2538, loss_GAN: 0.3170, loss_cycle: 0.0053, percep_loss_total: 0.2942, loss_d1: 0.2357, loss_d2: 0.3083, lr_d:0.00070, lr_g:0.00070 ,Epoch: 7.0
+End of epoch7/200 Time Taken:5292.527690406998        Accuracy_best:0 ..Epoch:0
+Step [69656/10000000], loss_g: 0.2124, loss_identity: 0.2689, loss_GAN: 0.1545, loss_cycle: 0.0055, percep_loss_total: 0.3157, loss_d1: 0.3358, loss_d2: 0.2548, lr_d:0.00070, lr_g:0.00070 ,Epoch: 8.0
+End of epoch8/200 Time Taken:5300.615361261        Accuracy_best:0 ..Epoch:0
+Step [78363/10000000], loss_g: 0.7352, loss_identity: 0.2751, loss_GAN: 0.6797, loss_cycle: 0.0048, percep_loss_total: 0.2901, loss_d1: 0.6566, loss_d2: 0.3113, lr_d:0.00070, lr_g:0.00070 ,Epoch: 9.0
+End of epoch9/200 Time Taken:5301.166106846002        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-9-m-s.png
+saved ./samples/c2n/sample-9-s-m.png
+Step [87070/10000000], loss_g: 0.1881, loss_identity: 0.2546, loss_GAN: 0.1267, loss_cycle: 0.0059, percep_loss_total: 0.3110, loss_d1: 0.2434, loss_d2: 0.3100, lr_d:0.00070, lr_g:0.00070 ,Epoch: 10.0
+End of epoch10/200 Time Taken:5299.647196350998        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 78263.0262.. PSNR'inf': 14.9167.. SSIM1'1': 0.5335.. SSIM2'1': 0.7590.. UQI'1': 0.950..VIF'1': 0.099
+saved ./samples2/n2c/sample-10-n-c.png
+$$$$$$$$$$$$$$$$$best_savedmdl_epoch:10  psnr_best: 14.916662315299993
+Last_savedmdl_epoch:10
+Denoise_gait2.py:136: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Step [95777/10000000], loss_g: 0.3789, loss_identity: 0.2713, loss_GAN: 0.3187, loss_cycle: 0.0056, percep_loss_total: 0.2549, loss_d1: 0.2014, loss_d2: 0.1785, lr_d:0.00070, lr_g:0.00070 ,Epoch: 11.0
+End of epoch11/200 Time Taken:5292.523205420002        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [104484/10000000], loss_g: 0.4055, loss_identity: 0.2420, loss_GAN: 0.3661, loss_cycle: 0.0035, percep_loss_total: 0.2810, loss_d1: 0.2096, loss_d2: 0.1859, lr_d:0.00070, lr_g:0.00070 ,Epoch: 12.0
+End of epoch12/200 Time Taken:5298.907688088999        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-12-m-s.png
+saved ./samples/c2n/sample-12-s-m.png
+Step [113191/10000000], loss_g: 0.3670, loss_identity: 0.2683, loss_GAN: 0.3224, loss_cycle: 0.0040, percep_loss_total: 0.2675, loss_d1: 0.2525, loss_d2: 0.2320, lr_d:0.00070, lr_g:0.00070 ,Epoch: 13.0
+End of epoch13/200 Time Taken:5294.461200835998        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [121898/10000000], loss_g: 0.7678, loss_identity: 0.2812, loss_GAN: 0.7043, loss_cycle: 0.0056, percep_loss_total: 0.3816, loss_d1: 0.0238, loss_d2: 0.1819, lr_d:0.00070, lr_g:0.00070 ,Epoch: 14.0
+End of epoch14/200 Time Taken:5299.9264224579965        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [130605/10000000], loss_g: 0.6584, loss_identity: 0.2680, loss_GAN: 0.6083, loss_cycle: 0.0043, percep_loss_total: 0.3381, loss_d1: 0.0372, loss_d2: 0.2019, lr_d:0.00070, lr_g:0.00070 ,Epoch: 15.0
+End of epoch15/200 Time Taken:5297.4443232900085        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-15-m-s.png
+saved ./samples/c2n/sample-15-s-m.png
+Step [139312/10000000], loss_g: 0.1875, loss_identity: 0.2912, loss_GAN: 0.1421, loss_cycle: 0.0043, percep_loss_total: 0.3590, loss_d1: 0.3631, loss_d2: 0.2534, lr_d:0.00070, lr_g:0.00070 ,Epoch: 16.0
+End of epoch16/200 Time Taken:5289.90922495001        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [148019/10000000], loss_g: 0.5259, loss_identity: 0.2560, loss_GAN: 0.4672, loss_cycle: 0.0053, percep_loss_total: 0.3903, loss_d1: 0.1090, loss_d2: 0.0995, lr_d:0.00070, lr_g:0.00070 ,Epoch: 17.0
+End of epoch17/200 Time Taken:5289.621772489001        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [156726/10000000], loss_g: 0.8842, loss_identity: 0.2483, loss_GAN: 0.8274, loss_cycle: 0.0048, percep_loss_total: 0.4155, loss_d1: 0.0301, loss_d2: 0.2332, lr_d:0.00070, lr_g:0.00070 ,Epoch: 18.0
+End of epoch18/200 Time Taken:5296.599780732009        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-18-m-s.png
+saved ./samples/c2n/sample-18-s-m.png
+Step [165433/10000000], loss_g: 0.3118, loss_identity: 0.2718, loss_GAN: 0.2747, loss_cycle: 0.0033, percep_loss_total: 0.3479, loss_d1: 0.1891, loss_d2: 0.2027, lr_d:0.00070, lr_g:0.00070 ,Epoch: 19.0
+End of epoch19/200 Time Taken:5301.816305916989        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [174140/10000000], loss_g: 0.2053, loss_identity: 0.2482, loss_GAN: 0.1661, loss_cycle: 0.0036, percep_loss_total: 0.4164, loss_d1: 0.1883, loss_d2: 0.3139, lr_d:0.00062, lr_g:0.00062 ,Epoch: 20.0
+End of epoch20/200 Time Taken:5295.067515457005        Accuracy_best:14.916662315299993 ..Epoch:10
+i: 37.0000.. MSE'0': 114103.2440.. PSNR'inf': 13.2594.. SSIM1'1': 0.5208.. SSIM2'1': 0.7224.. UQI'1': 0.927..VIF'1': 0.078
+saved ./samples2/n2c/sample-20-n-c.png
+Last_savedmdl_epoch:20
+Step [182847/10000000], loss_g: 0.5065, loss_identity: 0.2726, loss_GAN: 0.4462, loss_cycle: 0.0055, percep_loss_total: 0.4375, loss_d1: 0.0785, loss_d2: 0.2547, lr_d:0.00062, lr_g:0.00062 ,Epoch: 21.0
+End of epoch21/200 Time Taken:5303.46998116        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-21-m-s.png
+saved ./samples/c2n/sample-21-s-m.png
+Step [191554/10000000], loss_g: 0.3499, loss_identity: 0.2536, loss_GAN: 0.2973, loss_cycle: 0.0048, percep_loss_total: 0.3834, loss_d1: 0.5714, loss_d2: 0.2291, lr_d:0.00062, lr_g:0.00062 ,Epoch: 22.0
+End of epoch22/200 Time Taken:5301.55642030701        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [200261/10000000], loss_g: 0.5440, loss_identity: 0.2591, loss_GAN: 0.4813, loss_cycle: 0.0057, percep_loss_total: 0.4191, loss_d1: 0.0378, loss_d2: 0.1725, lr_d:0.00062, lr_g:0.00062 ,Epoch: 23.0
+End of epoch23/200 Time Taken:5299.441411417996        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [208968/10000000], loss_g: 1.0487, loss_identity: 0.2694, loss_GAN: 0.9805, loss_cycle: 0.0058, percep_loss_total: 0.4677, loss_d1: 0.0591, loss_d2: 0.2089, lr_d:0.00062, lr_g:0.00062 ,Epoch: 24.0
+End of epoch24/200 Time Taken:5272.392187991994        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-24-m-s.png
+saved ./samples/c2n/sample-24-s-m.png
+Step [217675/10000000], loss_g: 0.4239, loss_identity: 0.2746, loss_GAN: 0.3640, loss_cycle: 0.0055, percep_loss_total: 0.4823, loss_d1: 0.0394, loss_d2: 0.2789, lr_d:0.00062, lr_g:0.00062 ,Epoch: 25.0
+End of epoch25/200 Time Taken:5271.359157689993        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [226382/10000000], loss_g: 0.7773, loss_identity: 0.2793, loss_GAN: 0.7168, loss_cycle: 0.0052, percep_loss_total: 0.4381, loss_d1: 0.0053, loss_d2: 0.1522, lr_d:0.00062, lr_g:0.00062 ,Epoch: 26.0
+End of epoch26/200 Time Taken:5269.877193060995        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [235089/10000000], loss_g: 0.7279, loss_identity: 0.2790, loss_GAN: 0.6614, loss_cycle: 0.0058, percep_loss_total: 0.6539, loss_d1: 0.2759, loss_d2: 0.2051, lr_d:0.00062, lr_g:0.00062 ,Epoch: 27.0
+End of epoch27/200 Time Taken:5280.362802085001        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-27-m-s.png
+saved ./samples/c2n/sample-27-s-m.png
+Step [243796/10000000], loss_g: 0.7794, loss_identity: 0.2774, loss_GAN: 0.7294, loss_cycle: 0.0042, percep_loss_total: 0.3523, loss_d1: 0.0593, loss_d2: 0.2173, lr_d:0.00062, lr_g:0.00062 ,Epoch: 28.0
+End of epoch28/200 Time Taken:5292.209672611003        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [252503/10000000], loss_g: 1.1019, loss_identity: 0.2276, loss_GAN: 1.0375, loss_cycle: 0.0053, percep_loss_total: 0.5941, loss_d1: 0.1190, loss_d2: 0.2680, lr_d:0.00062, lr_g:0.00062 ,Epoch: 29.0
+End of epoch29/200 Time Taken:5290.034771088016        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [261210/10000000], loss_g: 0.5033, loss_identity: 0.2514, loss_GAN: 0.4610, loss_cycle: 0.0037, percep_loss_total: 0.3444, loss_d1: 0.0231, loss_d2: 0.2879, lr_d:0.00062, lr_g:0.00062 ,Epoch: 30.0
+End of epoch30/200 Time Taken:5287.844473777019        Accuracy_best:14.916662315299993 ..Epoch:10
+i: 37.0000.. MSE'0': 110093.8746.. PSNR'inf': 13.4106.. SSIM1'1': 0.5542.. SSIM2'1': 0.7186.. UQI'1': 0.921..VIF'1': 0.079
+saved ./samples2/n2c/sample-30-n-c.png
+Last_savedmdl_epoch:30
+saved ./samples/n2c/sample-30-m-s.png
+saved ./samples/c2n/sample-30-s-m.png
+Denoise_gait2.py:137: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  f = plt.figure()
+Denoise_gait2.py:694: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  f = plt.figure()
+Denoise_gait2.py:709: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  f = plt.figure()
+Step [269917/10000000], loss_g: 0.4545, loss_identity: 0.2652, loss_GAN: 0.3593, loss_cycle: 0.0090, percep_loss_total: 0.6752, loss_d1: 0.0562, loss_d2: 0.2480, lr_d:0.00062, lr_g:0.00062 ,Epoch: 31.0
+End of epoch31/200 Time Taken:5302.133900517016        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [278624/10000000], loss_g: 0.7361, loss_identity: 0.2632, loss_GAN: 0.6802, loss_cycle: 0.0048, percep_loss_total: 0.5715, loss_d1: 0.0033, loss_d2: 0.2752, lr_d:0.00062, lr_g:0.00062 ,Epoch: 32.0
+End of epoch32/200 Time Taken:5271.62780137299        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [287331/10000000], loss_g: 0.8319, loss_identity: 0.2713, loss_GAN: 0.7731, loss_cycle: 0.0050, percep_loss_total: 0.5220, loss_d1: 0.0059, loss_d2: 0.2164, lr_d:0.00062, lr_g:0.00062 ,Epoch: 33.0
+End of epoch33/200 Time Taken:5267.513552546996        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-33-m-s.png
+saved ./samples/c2n/sample-33-s-m.png
+Step [296038/10000000], loss_g: 0.6874, loss_identity: 0.2497, loss_GAN: 0.6352, loss_cycle: 0.0045, percep_loss_total: 0.4844, loss_d1: 0.0019, loss_d2: 0.2536, lr_d:0.00062, lr_g:0.00062 ,Epoch: 34.0
+End of epoch34/200 Time Taken:5272.891859046009        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [304745/10000000], loss_g: 0.8819, loss_identity: 0.2751, loss_GAN: 0.8155, loss_cycle: 0.0057, percep_loss_total: 0.6461, loss_d1: 0.0085, loss_d2: 0.1900, lr_d:0.00062, lr_g:0.00062 ,Epoch: 35.0
+End of epoch35/200 Time Taken:5270.996824503993        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [313452/10000000], loss_g: 0.5267, loss_identity: 0.2639, loss_GAN: 0.4587, loss_cycle: 0.0062, percep_loss_total: 0.5581, loss_d1: 0.0223, loss_d2: 0.3682, lr_d:0.00062, lr_g:0.00062 ,Epoch: 36.0
+End of epoch36/200 Time Taken:5271.526287975983        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-36-m-s.png
+saved ./samples/c2n/sample-36-s-m.png
+Step [322159/10000000], loss_g: 0.9097, loss_identity: 0.2625, loss_GAN: 0.8401, loss_cycle: 0.0060, percep_loss_total: 0.6704, loss_d1: 0.0128, loss_d2: 0.2093, lr_d:0.00062, lr_g:0.00062 ,Epoch: 37.0
+End of epoch37/200 Time Taken:5277.118044593983        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [330866/10000000], loss_g: 0.8219, loss_identity: 0.2551, loss_GAN: 0.7617, loss_cycle: 0.0052, percep_loss_total: 0.4763, loss_d1: 0.0216, loss_d2: 0.2658, lr_d:0.00062, lr_g:0.00062 ,Epoch: 38.0
+End of epoch38/200 Time Taken:5278.013073900016        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [339573/10000000], loss_g: 0.6763, loss_identity: 0.2569, loss_GAN: 0.6081, loss_cycle: 0.0060, percep_loss_total: 0.9105, loss_d1: 0.0119, loss_d2: 0.2948, lr_d:0.00062, lr_g:0.00062 ,Epoch: 39.0
+End of epoch39/200 Time Taken:5273.118390537013        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-39-m-s.png
+saved ./samples/c2n/sample-39-s-m.png
+Step [348280/10000000], loss_g: 0.8725, loss_identity: 0.2848, loss_GAN: 0.8071, loss_cycle: 0.0056, percep_loss_total: 0.6809, loss_d1: 0.0094, loss_d2: 0.1854, lr_d:0.00055, lr_g:0.00055 ,Epoch: 40.0
+End of epoch40/200 Time Taken:5277.183176605002        Accuracy_best:14.916662315299993 ..Epoch:10
+i: 37.0000.. MSE'0': 128804.3127.. PSNR'inf': 12.7241.. SSIM1'1': 0.5921.. SSIM2'1': 0.6910.. UQI'1': 0.900..VIF'1': 0.071
+saved ./samples2/n2c/sample-40-n-c.png
+Last_savedmdl_epoch:40
+Step [356987/10000000], loss_g: 0.8040, loss_identity: 0.2699, loss_GAN: 0.7388, loss_cycle: 0.0057, percep_loss_total: 0.7481, loss_d1: 0.0027, loss_d2: 0.2111, lr_d:0.00055, lr_g:0.00055 ,Epoch: 41.0
+End of epoch41/200 Time Taken:5284.434763508005        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [365694/10000000], loss_g: 0.6780, loss_identity: 0.2570, loss_GAN: 0.6249, loss_cycle: 0.0046, percep_loss_total: 0.4870, loss_d1: 0.0121, loss_d2: 0.2789, lr_d:0.00055, lr_g:0.00055 ,Epoch: 42.0
+End of epoch42/200 Time Taken:5275.229018601996        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-42-m-s.png
+saved ./samples/c2n/sample-42-s-m.png
+Step [374401/10000000], loss_g: 0.7305, loss_identity: 0.2448, loss_GAN: 0.6720, loss_cycle: 0.0051, percep_loss_total: 0.5633, loss_d1: 0.0033, loss_d2: 0.2309, lr_d:0.00055, lr_g:0.00055 ,Epoch: 43.0
+End of epoch43/200 Time Taken:5275.336342988012        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [383108/10000000], loss_g: 0.7984, loss_identity: 0.2625, loss_GAN: 0.7442, loss_cycle: 0.0046, percep_loss_total: 0.4669, loss_d1: 0.0212, loss_d2: 0.3392, lr_d:0.00055, lr_g:0.00055 ,Epoch: 44.0
+End of epoch44/200 Time Taken:5276.017642308027        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [391815/10000000], loss_g: 0.7909, loss_identity: 0.2575, loss_GAN: 0.7410, loss_cycle: 0.0042, percep_loss_total: 0.5163, loss_d1: 0.0455, loss_d2: 0.2032, lr_d:0.00055, lr_g:0.00055 ,Epoch: 45.0
+End of epoch45/200 Time Taken:5275.281412056007        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-45-m-s.png
+saved ./samples/c2n/sample-45-s-m.png
+Step [400522/10000000], loss_g: 0.6129, loss_identity: 0.2501, loss_GAN: 0.5596, loss_cycle: 0.0046, percep_loss_total: 0.6773, loss_d1: 0.0020, loss_d2: 0.2144, lr_d:0.00055, lr_g:0.00055 ,Epoch: 46.0
+End of epoch46/200 Time Taken:5274.755961965013        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [409229/10000000], loss_g: 0.6507, loss_identity: 0.2776, loss_GAN: 0.5840, loss_cycle: 0.0059, percep_loss_total: 0.6831, loss_d1: 0.0034, loss_d2: 0.2551, lr_d:0.00055, lr_g:0.00055 ,Epoch: 47.0
+End of epoch47/200 Time Taken:5277.858411577996        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [417936/10000000], loss_g: 0.3875, loss_identity: 0.2378, loss_GAN: 0.3312, loss_cycle: 0.0051, percep_loss_total: 0.7551, loss_d1: 0.1309, loss_d2: 0.1742, lr_d:0.00055, lr_g:0.00055 ,Epoch: 48.0
+End of epoch48/200 Time Taken:5274.445031052979        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-48-m-s.png
+saved ./samples/c2n/sample-48-s-m.png
+Step [426643/10000000], loss_g: 0.3363, loss_identity: 0.2276, loss_GAN: 0.3009, loss_cycle: 0.0031, percep_loss_total: 0.4266, loss_d1: 0.1087, loss_d2: 0.2818, lr_d:0.00055, lr_g:0.00055 ,Epoch: 49.0
+End of epoch49/200 Time Taken:5272.048534581001        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [435350/10000000], loss_g: 0.3444, loss_identity: 0.2500, loss_GAN: 0.3058, loss_cycle: 0.0034, percep_loss_total: 0.6161, loss_d1: 0.2551, loss_d2: 0.2692, lr_d:0.00055, lr_g:0.00055 ,Epoch: 50.0
+End of epoch50/200 Time Taken:5276.02828162798        Accuracy_best:14.916662315299993 ..Epoch:10
+i: 37.0000.. MSE'0': 108921.1295.. PSNR'inf': 13.4528.. SSIM1'1': 0.6408.. SSIM2'1': 0.7196.. UQI'1': 0.927..VIF'1': 0.075
+saved ./samples2/n2c/sample-50-n-c.png
+Last_savedmdl_epoch:50
+Step [444057/10000000], loss_g: 0.6045, loss_identity: 0.2888, loss_GAN: 0.5507, loss_cycle: 0.0047, percep_loss_total: 0.5341, loss_d1: 0.0047, loss_d2: 0.2250, lr_d:0.00055, lr_g:0.00055 ,Epoch: 51.0
+End of epoch51/200 Time Taken:5282.140079141012        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-51-m-s.png
+saved ./samples/c2n/sample-51-s-m.png
+Step [452764/10000000], loss_g: 0.6900, loss_identity: 0.2686, loss_GAN: 0.6247, loss_cycle: 0.0058, percep_loss_total: 0.8043, loss_d1: 0.0127, loss_d2: 0.1975, lr_d:0.00055, lr_g:0.00055 ,Epoch: 52.0
+End of epoch52/200 Time Taken:5277.372740053048        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [461471/10000000], loss_g: 0.8490, loss_identity: 0.2626, loss_GAN: 0.7913, loss_cycle: 0.0049, percep_loss_total: 0.6091, loss_d1: 0.0019, loss_d2: 0.2119, lr_d:0.00055, lr_g:0.00055 ,Epoch: 53.0
+End of epoch53/200 Time Taken:5277.776418119029        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [470178/10000000], loss_g: 0.7168, loss_identity: 0.2788, loss_GAN: 0.6594, loss_cycle: 0.0049, percep_loss_total: 0.6990, loss_d1: 0.0023, loss_d2: 0.2572, lr_d:0.00055, lr_g:0.00055 ,Epoch: 54.0
+End of epoch54/200 Time Taken:5274.140074461        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-54-m-s.png
+saved ./samples/c2n/sample-54-s-m.png
+Step [478885/10000000], loss_g: 1.0865, loss_identity: 0.2819, loss_GAN: 1.0164, loss_cycle: 0.0059, percep_loss_total: 0.7269, loss_d1: 0.0148, loss_d2: 0.0806, lr_d:0.00055, lr_g:0.00055 ,Epoch: 55.0
+End of epoch55/200 Time Taken:5274.340147399984        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [487592/10000000], loss_g: 0.2077, loss_identity: 0.2453, loss_GAN: 0.1711, loss_cycle: 0.0034, percep_loss_total: 0.4845, loss_d1: 0.1558, loss_d2: 0.3437, lr_d:0.00055, lr_g:0.00055 ,Epoch: 56.0
+End of epoch56/200 Time Taken:5275.2539830970345        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [496299/10000000], loss_g: 0.7403, loss_identity: 0.2368, loss_GAN: 0.6940, loss_cycle: 0.0039, percep_loss_total: 0.4925, loss_d1: 0.2234, loss_d2: 0.3102, lr_d:0.00055, lr_g:0.00055 ,Epoch: 57.0
+End of epoch57/200 Time Taken:5273.888292445976        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-57-m-s.png
+saved ./samples/c2n/sample-57-s-m.png
+Step [505006/10000000], loss_g: 0.5919, loss_identity: 0.2515, loss_GAN: 0.5354, loss_cycle: 0.0050, percep_loss_total: 0.6847, loss_d1: 0.0042, loss_d2: 0.2701, lr_d:0.00055, lr_g:0.00055 ,Epoch: 58.0
+End of epoch58/200 Time Taken:5276.4645190060255        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [513713/10000000], loss_g: 0.6692, loss_identity: 0.2645, loss_GAN: 0.6181, loss_cycle: 0.0044, percep_loss_total: 0.6440, loss_d1: 0.0491, loss_d2: 0.2334, lr_d:0.00055, lr_g:0.00055 ,Epoch: 59.0
+End of epoch59/200 Time Taken:5273.823018912983        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [522420/10000000], loss_g: 0.9855, loss_identity: 0.2389, loss_GAN: 0.9248, loss_cycle: 0.0050, percep_loss_total: 0.6693, loss_d1: 0.1213, loss_d2: 0.2946, lr_d:0.00049, lr_g:0.00049 ,Epoch: 60.0
+End of epoch60/200 Time Taken:5276.315585681994        Accuracy_best:14.916662315299993 ..Epoch:10
+i: 37.0000.. MSE'0': 88481.0608.. PSNR'inf': 14.3526.. SSIM1'1': 0.6621.. SSIM2'1': 0.7479.. UQI'1': 0.940..VIF'1': 0.091
+saved ./samples2/n2c/sample-60-n-c.png
+Last_savedmdl_epoch:60
+saved ./samples/n2c/sample-60-m-s.png
+saved ./samples/c2n/sample-60-s-m.png
+savedmdl_epoch:60
+Step [531127/10000000], loss_g: 0.9342, loss_identity: 0.2827, loss_GAN: 0.8676, loss_cycle: 0.0057, percep_loss_total: 0.6455, loss_d1: 0.1224, loss_d2: 0.2528, lr_d:0.00049, lr_g:0.00049 ,Epoch: 61.0
+End of epoch61/200 Time Taken:5284.142133601999        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [539834/10000000], loss_g: 0.9043, loss_identity: 0.2450, loss_GAN: 0.8449, loss_cycle: 0.0050, percep_loss_total: 0.8438, loss_d1: 0.0033, loss_d2: 0.3543, lr_d:0.00049, lr_g:0.00049 ,Epoch: 62.0
+End of epoch62/200 Time Taken:5275.896642060019        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [548541/10000000], loss_g: 0.4762, loss_identity: 0.2580, loss_GAN: 0.4137, loss_cycle: 0.0057, percep_loss_total: 0.5735, loss_d1: 0.0462, loss_d2: 0.2318, lr_d:0.00049, lr_g:0.00049 ,Epoch: 63.0
+End of epoch63/200 Time Taken:5274.81770768197        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-63-m-s.png
+saved ./samples/c2n/sample-63-s-m.png
+Step [557248/10000000], loss_g: 0.7339, loss_identity: 0.2525, loss_GAN: 0.6600, loss_cycle: 0.0066, percep_loss_total: 0.8432, loss_d1: 0.1469, loss_d2: 0.1209, lr_d:0.00049, lr_g:0.00049 ,Epoch: 64.0
+End of epoch64/200 Time Taken:5270.079996169021        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [565955/10000000], loss_g: 0.3222, loss_identity: 0.2582, loss_GAN: 0.2758, loss_cycle: 0.0042, percep_loss_total: 0.5648, loss_d1: 0.1488, loss_d2: 0.2482, lr_d:0.00049, lr_g:0.00049 ,Epoch: 65.0
+End of epoch65/200 Time Taken:5272.9481813510065        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [574662/10000000], loss_g: 0.3459, loss_identity: 0.2732, loss_GAN: 0.2909, loss_cycle: 0.0050, percep_loss_total: 0.6637, loss_d1: 0.2147, loss_d2: 0.2319, lr_d:0.00049, lr_g:0.00049 ,Epoch: 66.0
+End of epoch66/200 Time Taken:5271.917721177975        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-66-m-s.png
+saved ./samples/c2n/sample-66-s-m.png
+Step [583369/10000000], loss_g: 0.7155, loss_identity: 0.2686, loss_GAN: 0.6285, loss_cycle: 0.0079, percep_loss_total: 0.8308, loss_d1: 0.0962, loss_d2: 0.1767, lr_d:0.00049, lr_g:0.00049 ,Epoch: 67.0
+End of epoch67/200 Time Taken:5267.681029130006        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [592076/10000000], loss_g: 0.3893, loss_identity: 0.2568, loss_GAN: 0.3085, loss_cycle: 0.0076, percep_loss_total: 0.7245, loss_d1: 0.2179, loss_d2: 0.2694, lr_d:0.00049, lr_g:0.00049 ,Epoch: 68.0
+End of epoch68/200 Time Taken:5281.71012268099        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [600783/10000000], loss_g: 0.5418, loss_identity: 0.2747, loss_GAN: 0.4746, loss_cycle: 0.0061, percep_loss_total: 0.6792, loss_d1: 0.0890, loss_d2: 0.2536, lr_d:0.00049, lr_g:0.00049 ,Epoch: 69.0
+End of epoch69/200 Time Taken:5267.768869358988        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-69-m-s.png
+saved ./samples/c2n/sample-69-s-m.png
+Step [609490/10000000], loss_g: 0.5327, loss_identity: 0.2385, loss_GAN: 0.4698, loss_cycle: 0.0057, percep_loss_total: 0.7354, loss_d1: 0.1717, loss_d2: 0.2875, lr_d:0.00049, lr_g:0.00049 ,Epoch: 70.0
+End of epoch70/200 Time Taken:5266.295836205012        Accuracy_best:14.916662315299993 ..Epoch:10
+i: 37.0000.. MSE'0': 84670.9893.. PSNR'inf': 14.5432.. SSIM1'1': 0.7363.. SSIM2'1': 0.7609.. UQI'1': 0.941..VIF'1': 0.102
+saved ./samples2/n2c/sample-70-n-c.png
+Last_savedmdl_epoch:70
+Step [618197/10000000], loss_g: 0.3540, loss_identity: 0.2625, loss_GAN: 0.2870, loss_cycle: 0.0062, percep_loss_total: 0.8063, loss_d1: 0.2451, loss_d2: 0.2559, lr_d:0.00049, lr_g:0.00049 ,Epoch: 71.0
+End of epoch71/200 Time Taken:5277.355035813991        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [626904/10000000], loss_g: 0.6061, loss_identity: 0.2476, loss_GAN: 0.5458, loss_cycle: 0.0053, percep_loss_total: 0.8475, loss_d1: 0.0746, loss_d2: 0.2061, lr_d:0.00049, lr_g:0.00049 ,Epoch: 72.0
+End of epoch72/200 Time Taken:5267.6858243820025        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-72-m-s.png
+saved ./samples/c2n/sample-72-s-m.png
+Step [635611/10000000], loss_g: 0.8932, loss_identity: 0.2552, loss_GAN: 0.8261, loss_cycle: 0.0058, percep_loss_total: 0.6789, loss_d1: 0.1685, loss_d2: 0.2057, lr_d:0.00049, lr_g:0.00049 ,Epoch: 73.0
+End of epoch73/200 Time Taken:5265.780655726034        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [644318/10000000], loss_g: 0.4833, loss_identity: 0.2604, loss_GAN: 0.4267, loss_cycle: 0.0051, percep_loss_total: 0.6542, loss_d1: 0.1413, loss_d2: 0.2367, lr_d:0.00049, lr_g:0.00049 ,Epoch: 74.0
+End of epoch74/200 Time Taken:5267.849761574995        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [653025/10000000], loss_g: 0.9656, loss_identity: 0.2673, loss_GAN: 0.8618, loss_cycle: 0.0093, percep_loss_total: 1.0086, loss_d1: 0.4002, loss_d2: 0.2050, lr_d:0.00049, lr_g:0.00049 ,Epoch: 75.0
+End of epoch75/200 Time Taken:5265.992426584009        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-75-m-s.png
+saved ./samples/c2n/sample-75-s-m.png
+Step [661732/10000000], loss_g: 0.7402, loss_identity: 0.2763, loss_GAN: 0.6668, loss_cycle: 0.0065, percep_loss_total: 0.8624, loss_d1: 0.1308, loss_d2: 0.2693, lr_d:0.00049, lr_g:0.00049 ,Epoch: 76.0
+End of epoch76/200 Time Taken:5269.50357155595        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [670439/10000000], loss_g: 0.5553, loss_identity: 0.3035, loss_GAN: 0.4913, loss_cycle: 0.0057, percep_loss_total: 0.8821, loss_d1: 0.1324, loss_d2: 0.2566, lr_d:0.00049, lr_g:0.00049 ,Epoch: 77.0
+End of epoch77/200 Time Taken:5271.757096726971        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [679146/10000000], loss_g: 0.7994, loss_identity: 0.2357, loss_GAN: 0.7191, loss_cycle: 0.0071, percep_loss_total: 1.0837, loss_d1: 0.1980, loss_d2: 0.1392, lr_d:0.00049, lr_g:0.00049 ,Epoch: 78.0
+End of epoch78/200 Time Taken:5269.424467155011        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-78-m-s.png
+saved ./samples/c2n/sample-78-s-m.png
+Step [687853/10000000], loss_g: 0.4295, loss_identity: 0.2542, loss_GAN: 0.3649, loss_cycle: 0.0059, percep_loss_total: 0.8754, loss_d1: 0.1032, loss_d2: 0.1666, lr_d:0.00049, lr_g:0.00049 ,Epoch: 79.0
+End of epoch79/200 Time Taken:5268.561175900977        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [696560/10000000], loss_g: 0.4601, loss_identity: 0.2607, loss_GAN: 0.4017, loss_cycle: 0.0053, percep_loss_total: 0.8067, loss_d1: 0.1892, loss_d2: 0.2076, lr_d:0.00044, lr_g:0.00044 ,Epoch: 80.0
+End of epoch80/200 Time Taken:5268.569880665978        Accuracy_best:14.916662315299993 ..Epoch:10
+i: 37.0000.. MSE'0': 112760.2982.. PSNR'inf': 13.2993.. SSIM1'1': 0.6900.. SSIM2'1': 0.7190.. UQI'1': 0.915..VIF'1': 0.084
+saved ./samples2/n2c/sample-80-n-c.png
+Last_savedmdl_epoch:80
+Step [705267/10000000], loss_g: 0.3873, loss_identity: 0.2382, loss_GAN: 0.3310, loss_cycle: 0.0051, percep_loss_total: 0.7560, loss_d1: 0.0558, loss_d2: 0.2765, lr_d:0.00044, lr_g:0.00044 ,Epoch: 81.0
+End of epoch81/200 Time Taken:5286.787652031984        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-81-m-s.png
+saved ./samples/c2n/sample-81-s-m.png
+Step [713974/10000000], loss_g: 0.7113, loss_identity: 0.3230, loss_GAN: 0.5902, loss_cycle: 0.0113, percep_loss_total: 0.9569, loss_d1: 0.0097, loss_d2: 0.2147, lr_d:0.00044, lr_g:0.00044 ,Epoch: 82.0
+End of epoch82/200 Time Taken:5275.347720567021        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [722681/10000000], loss_g: 0.3609, loss_identity: 0.2291, loss_GAN: 0.2890, loss_cycle: 0.0067, percep_loss_total: 0.9274, loss_d1: 0.0717, loss_d2: 0.2429, lr_d:0.00044, lr_g:0.00044 ,Epoch: 83.0
+End of epoch83/200 Time Taken:5276.3845517220325        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [731388/10000000], loss_g: 0.4832, loss_identity: 0.2387, loss_GAN: 0.4154, loss_cycle: 0.0062, percep_loss_total: 0.9189, loss_d1: 0.0824, loss_d2: 0.2452, lr_d:0.00044, lr_g:0.00044 ,Epoch: 84.0
+End of epoch84/200 Time Taken:5230.046632099024        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-84-m-s.png
+saved ./samples/c2n/sample-84-s-m.png
+Step [740095/10000000], loss_g: 0.6326, loss_identity: 0.2541, loss_GAN: 0.5683, loss_cycle: 0.0057, percep_loss_total: 0.7664, loss_d1: 0.0759, loss_d2: 0.1686, lr_d:0.00044, lr_g:0.00044 ,Epoch: 85.0
+End of epoch85/200 Time Taken:5267.146427374973        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [748802/10000000], loss_g: 0.4938, loss_identity: 0.2616, loss_GAN: 0.4353, loss_cycle: 0.0053, percep_loss_total: 0.7212, loss_d1: 0.0718, loss_d2: 0.2133, lr_d:0.00044, lr_g:0.00044 ,Epoch: 86.0
+End of epoch86/200 Time Taken:5263.456765525974        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [757509/10000000], loss_g: 0.9287, loss_identity: 0.2620, loss_GAN: 0.8460, loss_cycle: 0.0073, percep_loss_total: 0.8451, loss_d1: 0.1784, loss_d2: 0.3833, lr_d:0.00044, lr_g:0.00044 ,Epoch: 87.0
+End of epoch87/200 Time Taken:5268.58043484902        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-87-m-s.png
+saved ./samples/c2n/sample-87-s-m.png
+Step [766216/10000000], loss_g: 0.4207, loss_identity: 0.2683, loss_GAN: 0.3561, loss_cycle: 0.0059, percep_loss_total: 0.8312, loss_d1: 0.1310, loss_d2: 0.2004, lr_d:0.00044, lr_g:0.00044 ,Epoch: 88.0
+End of epoch88/200 Time Taken:5269.936933268968        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [774923/10000000], loss_g: 0.3663, loss_identity: 0.2658, loss_GAN: 0.3162, loss_cycle: 0.0045, percep_loss_total: 0.6706, loss_d1: 0.1982, loss_d2: 0.2303, lr_d:0.00044, lr_g:0.00044 ,Epoch: 89.0
+End of epoch89/200 Time Taken:5270.991792817949        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [783630/10000000], loss_g: 0.6409, loss_identity: 0.2389, loss_GAN: 0.5641, loss_cycle: 0.0069, percep_loss_total: 0.8715, loss_d1: 0.1100, loss_d2: 0.2613, lr_d:0.00044, lr_g:0.00044 ,Epoch: 90.0
+End of epoch90/200 Time Taken:5247.658288671984        Accuracy_best:14.916662315299993 ..Epoch:10
+i: 37.0000.. MSE'0': 95490.4852.. PSNR'inf': 14.0196.. SSIM1'1': 0.7242.. SSIM2'1': 0.7411.. UQI'1': 0.928..VIF'1': 0.100
+saved ./samples2/n2c/sample-90-n-c.png
+Last_savedmdl_epoch:90
+saved ./samples/n2c/sample-90-m-s.png
+saved ./samples/c2n/sample-90-s-m.png
+Step [792337/10000000], loss_g: 0.7321, loss_identity: 0.2343, loss_GAN: 0.6603, loss_cycle: 0.0063, percep_loss_total: 0.9234, loss_d1: 0.0481, loss_d2: 0.0956, lr_d:0.00044, lr_g:0.00044 ,Epoch: 91.0
+End of epoch91/200 Time Taken:5257.826669894974        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [801044/10000000], loss_g: 0.3724, loss_identity: 0.2452, loss_GAN: 0.3035, loss_cycle: 0.0064, percep_loss_total: 0.9028, loss_d1: 0.1120, loss_d2: 0.1923, lr_d:0.00044, lr_g:0.00044 ,Epoch: 92.0
+End of epoch92/200 Time Taken:5253.423659076972        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [809751/10000000], loss_g: 0.7225, loss_identity: 0.2776, loss_GAN: 0.6576, loss_cycle: 0.0057, percep_loss_total: 0.7813, loss_d1: 0.1693, loss_d2: 0.2405, lr_d:0.00044, lr_g:0.00044 ,Epoch: 93.0
+End of epoch93/200 Time Taken:5250.631230332016        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-93-m-s.png
+saved ./samples/c2n/sample-93-s-m.png
+Step [818458/10000000], loss_g: 0.6408, loss_identity: 0.2746, loss_GAN: 0.5501, loss_cycle: 0.0083, percep_loss_total: 0.9625, loss_d1: 0.0985, loss_d2: 0.1920, lr_d:0.00044, lr_g:0.00044 ,Epoch: 94.0
+End of epoch94/200 Time Taken:5257.067472453986        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [827165/10000000], loss_g: 0.6692, loss_identity: 0.2604, loss_GAN: 0.5880, loss_cycle: 0.0073, percep_loss_total: 1.0423, loss_d1: 0.0670, loss_d2: 0.1792, lr_d:0.00044, lr_g:0.00044 ,Epoch: 95.0
+End of epoch95/200 Time Taken:5249.488102972973        Accuracy_best:14.916662315299993 ..Epoch:10
+Step [835872/10000000], loss_g: 0.6053, loss_identity: 0.2514, loss_GAN: 0.5367, loss_cycle: 0.0062, percep_loss_total: 0.7373, loss_d1: 0.0701, loss_d2: 0.2067, lr_d:0.00044, lr_g:0.00044 ,Epoch: 96.0
+End of epoch96/200 Time Taken:5246.646271414007        Accuracy_best:14.916662315299993 ..Epoch:10
+saved ./samples/n2c/sample-96-m-s.png
+saved ./samples/c2n/sample-96-s-m.png
+Step [844579/10000000], loss_g: 0.5072, loss_identity: 0.2963, loss_GAN: 0.4190, loss_cycle: 0.0082, percep_loss_total: 1.0911, loss_d1: 0.1783, loss_d2: 0.2731, lr_d:0.00044, lr_g:0.00044 ,Epoch: 97.0
+End of epoch97/200 Time Taken:5246.06539168302        Accuracy_best:14.916662315299993 ..Epoch:10
+slurmstepd: error: *** JOB 82167 ON linse19 CANCELLED AT 2022-10-08T18:21:32 DUE TO TIME LIMIT ***

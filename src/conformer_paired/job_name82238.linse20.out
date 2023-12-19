@@ -1,0 +1,1051 @@
+pyenv-virtualenv: prompt changing will be removed from future release. configure `export PYENV_VIRTUALENV_DISABLE_PROMPT=1' to simulate the behavior.
+The code will run on GPU.
+torch.Size([9, 3, 256, 256])
+The code will run on GPU.etrf3o
+g21 Parameters
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1         [-1, 64, 256, 256]             256
+    InstanceNorm2d-2         [-1, 64, 256, 256]             128
+             PReLU-3         [-1, 64, 256, 256]              64
+     ConstantPad2d-4         [-1, 64, 257, 258]               0
+            Conv2d-5         [-1, 64, 256, 256]          24,640
+    InstanceNorm2d-6         [-1, 64, 256, 256]             128
+             PReLU-7         [-1, 64, 256, 256]              64
+     ConstantPad2d-8        [-1, 128, 258, 258]               0
+            Conv2d-9         [-1, 64, 256, 256]          49,216
+   InstanceNorm2d-10         [-1, 64, 256, 256]             128
+            PReLU-11         [-1, 64, 256, 256]              64
+    ConstantPad2d-12        [-1, 192, 260, 258]               0
+           Conv2d-13         [-1, 64, 256, 256]          73,792
+   InstanceNorm2d-14         [-1, 64, 256, 256]             128
+            PReLU-15         [-1, 64, 256, 256]              64
+    ConstantPad2d-16        [-1, 256, 264, 258]               0
+           Conv2d-17         [-1, 64, 256, 256]          98,368
+   InstanceNorm2d-18         [-1, 64, 256, 256]             128
+            PReLU-19         [-1, 64, 256, 256]              64
+  DilatedDenseNet-20         [-1, 64, 256, 256]               0
+           Conv2d-21         [-1, 64, 256, 128]          12,352
+   InstanceNorm2d-22         [-1, 64, 256, 128]             128
+            PReLU-23         [-1, 64, 256, 128]              64
+     DenseEncoder-24         [-1, 64, 256, 128]               0
+        LayerNorm-25              [-1, 256, 64]             128
+           Linear-26             [-1, 256, 256]          16,640
+            Swish-27             [-1, 256, 256]               0
+          Dropout-28             [-1, 256, 256]               0
+           Linear-29              [-1, 256, 64]          16,448
+          Dropout-30              [-1, 256, 64]               0
+      FeedForward-31              [-1, 256, 64]               0
+          PreNorm-32              [-1, 256, 64]               0
+            Scale-33              [-1, 256, 64]               0
+        LayerNorm-34              [-1, 256, 64]             128
+           Linear-35              [-1, 256, 64]           4,096
+           Linear-36             [-1, 256, 128]           8,192
+        Embedding-37              [-1, 256, 16]          16,400
+           Linear-38              [-1, 256, 64]           4,160
+          Dropout-39              [-1, 256, 64]               0
+        Attention-40              [-1, 256, 64]               0
+          PreNorm-41              [-1, 256, 64]               0
+        LayerNorm-42              [-1, 256, 64]             128
+        Rearrange-43              [-1, 64, 256]               0
+           Conv1d-44             [-1, 256, 256]          16,640
+              GLU-45             [-1, 128, 256]               0
+           Conv1d-46             [-1, 128, 256]           4,096
+  DepthWiseConv1d-47             [-1, 128, 256]               0
+      BatchNorm1d-48             [-1, 128, 256]             256
+            Swish-49             [-1, 128, 256]               0
+           Conv1d-50              [-1, 64, 256]           8,256
+        Rearrange-51              [-1, 256, 64]               0
+          Dropout-52              [-1, 256, 64]               0
+ConformerConvModule-53              [-1, 256, 64]               0
+        LayerNorm-54              [-1, 256, 64]             128
+           Linear-55             [-1, 256, 256]          16,640
+            Swish-56             [-1, 256, 256]               0
+          Dropout-57             [-1, 256, 256]               0
+           Linear-58              [-1, 256, 64]          16,448
+          Dropout-59              [-1, 256, 64]               0
+      FeedForward-60              [-1, 256, 64]               0
+          PreNorm-61              [-1, 256, 64]               0
+            Scale-62              [-1, 256, 64]               0
+        LayerNorm-63              [-1, 256, 64]             128
+   ConformerBlock-64              [-1, 256, 64]               0
+        LayerNorm-65              [-1, 128, 64]             128
+           Linear-66             [-1, 128, 256]          16,640
+            Swish-67             [-1, 128, 256]               0
+          Dropout-68             [-1, 128, 256]               0
+           Linear-69              [-1, 128, 64]          16,448
+          Dropout-70              [-1, 128, 64]               0
+      FeedForward-71              [-1, 128, 64]               0
+          PreNorm-72              [-1, 128, 64]               0
+            Scale-73              [-1, 128, 64]               0
+        LayerNorm-74              [-1, 128, 64]             128
+           Linear-75              [-1, 128, 64]           4,096
+           Linear-76             [-1, 128, 128]           8,192
+        Embedding-77              [-1, 128, 16]          16,400
+           Linear-78              [-1, 128, 64]           4,160
+          Dropout-79              [-1, 128, 64]               0
+        Attention-80              [-1, 128, 64]               0
+          PreNorm-81              [-1, 128, 64]               0
+        LayerNorm-82              [-1, 128, 64]             128
+        Rearrange-83              [-1, 64, 128]               0
+           Conv1d-84             [-1, 256, 128]          16,640
+              GLU-85             [-1, 128, 128]               0
+           Conv1d-86             [-1, 128, 128]           4,096
+  DepthWiseConv1d-87             [-1, 128, 128]               0
+      BatchNorm1d-88             [-1, 128, 128]             256
+            Swish-89             [-1, 128, 128]               0
+           Conv1d-90              [-1, 64, 128]           8,256
+        Rearrange-91              [-1, 128, 64]               0
+          Dropout-92              [-1, 128, 64]               0
+ConformerConvModule-93              [-1, 128, 64]               0
+        LayerNorm-94              [-1, 128, 64]             128
+           Linear-95             [-1, 128, 256]          16,640
+            Swish-96             [-1, 128, 256]               0
+          Dropout-97             [-1, 128, 256]               0
+           Linear-98              [-1, 128, 64]          16,448
+          Dropout-99              [-1, 128, 64]               0
+     FeedForward-100              [-1, 128, 64]               0
+         PreNorm-101              [-1, 128, 64]               0
+           Scale-102              [-1, 128, 64]               0
+       LayerNorm-103              [-1, 128, 64]             128
+  ConformerBlock-104              [-1, 128, 64]               0
+            TSCB-105         [-1, 64, 256, 128]               0
+       LayerNorm-106              [-1, 256, 64]             128
+          Linear-107             [-1, 256, 256]          16,640
+           Swish-108             [-1, 256, 256]               0
+         Dropout-109             [-1, 256, 256]               0
+          Linear-110              [-1, 256, 64]          16,448
+         Dropout-111              [-1, 256, 64]               0
+     FeedForward-112              [-1, 256, 64]               0
+         PreNorm-113              [-1, 256, 64]               0
+           Scale-114              [-1, 256, 64]               0
+       LayerNorm-115              [-1, 256, 64]             128
+          Linear-116              [-1, 256, 64]           4,096
+          Linear-117             [-1, 256, 128]           8,192
+       Embedding-118              [-1, 256, 16]          16,400
+          Linear-119              [-1, 256, 64]           4,160
+         Dropout-120              [-1, 256, 64]               0
+       Attention-121              [-1, 256, 64]               0
+         PreNorm-122              [-1, 256, 64]               0
+       LayerNorm-123              [-1, 256, 64]             128
+       Rearrange-124              [-1, 64, 256]               0
+          Conv1d-125             [-1, 256, 256]          16,640
+             GLU-126             [-1, 128, 256]               0
+          Conv1d-127             [-1, 128, 256]           4,096
+ DepthWiseConv1d-128             [-1, 128, 256]               0
+     BatchNorm1d-129             [-1, 128, 256]             256
+           Swish-130             [-1, 128, 256]               0
+          Conv1d-131              [-1, 64, 256]           8,256
+       Rearrange-132              [-1, 256, 64]               0
+         Dropout-133              [-1, 256, 64]               0
+ConformerConvModule-134              [-1, 256, 64]               0
+       LayerNorm-135              [-1, 256, 64]             128
+          Linear-136             [-1, 256, 256]          16,640
+           Swish-137             [-1, 256, 256]               0
+         Dropout-138             [-1, 256, 256]               0
+          Linear-139              [-1, 256, 64]          16,448
+         Dropout-140              [-1, 256, 64]               0
+     FeedForward-141              [-1, 256, 64]               0
+         PreNorm-142              [-1, 256, 64]               0
+           Scale-143              [-1, 256, 64]               0
+       LayerNorm-144              [-1, 256, 64]             128
+  ConformerBlock-145              [-1, 256, 64]               0
+       LayerNorm-146              [-1, 128, 64]             128
+          Linear-147             [-1, 128, 256]          16,640
+           Swish-148             [-1, 128, 256]               0
+         Dropout-149             [-1, 128, 256]               0
+          Linear-150              [-1, 128, 64]          16,448
+         Dropout-151              [-1, 128, 64]               0
+     FeedForward-152              [-1, 128, 64]               0
+         PreNorm-153              [-1, 128, 64]               0
+           Scale-154              [-1, 128, 64]               0
+       LayerNorm-155              [-1, 128, 64]             128
+          Linear-156              [-1, 128, 64]           4,096
+          Linear-157             [-1, 128, 128]           8,192
+       Embedding-158              [-1, 128, 16]          16,400
+          Linear-159              [-1, 128, 64]           4,160
+         Dropout-160              [-1, 128, 64]               0
+       Attention-161              [-1, 128, 64]               0
+         PreNorm-162              [-1, 128, 64]               0
+       LayerNorm-163              [-1, 128, 64]             128
+       Rearrange-164              [-1, 64, 128]               0
+          Conv1d-165             [-1, 256, 128]          16,640
+             GLU-166             [-1, 128, 128]               0
+          Conv1d-167             [-1, 128, 128]           4,096
+ DepthWiseConv1d-168             [-1, 128, 128]               0
+     BatchNorm1d-169             [-1, 128, 128]             256
+           Swish-170             [-1, 128, 128]               0
+          Conv1d-171              [-1, 64, 128]           8,256
+       Rearrange-172              [-1, 128, 64]               0
+         Dropout-173              [-1, 128, 64]               0
+ConformerConvModule-174              [-1, 128, 64]               0
+       LayerNorm-175              [-1, 128, 64]             128
+          Linear-176             [-1, 128, 256]          16,640
+           Swish-177             [-1, 128, 256]               0
+         Dropout-178             [-1, 128, 256]               0
+          Linear-179              [-1, 128, 64]          16,448
+         Dropout-180              [-1, 128, 64]               0
+     FeedForward-181              [-1, 128, 64]               0
+         PreNorm-182              [-1, 128, 64]               0
+           Scale-183              [-1, 128, 64]               0
+       LayerNorm-184              [-1, 128, 64]             128
+  ConformerBlock-185              [-1, 128, 64]               0
+            TSCB-186         [-1, 64, 256, 128]               0
+       LayerNorm-187              [-1, 256, 64]             128
+          Linear-188             [-1, 256, 256]          16,640
+           Swish-189             [-1, 256, 256]               0
+         Dropout-190             [-1, 256, 256]               0
+          Linear-191              [-1, 256, 64]          16,448
+         Dropout-192              [-1, 256, 64]               0
+     FeedForward-193              [-1, 256, 64]               0
+         PreNorm-194              [-1, 256, 64]               0
+           Scale-195              [-1, 256, 64]               0
+       LayerNorm-196              [-1, 256, 64]             128
+          Linear-197              [-1, 256, 64]           4,096
+          Linear-198             [-1, 256, 128]           8,192
+       Embedding-199              [-1, 256, 16]          16,400
+          Linear-200              [-1, 256, 64]           4,160
+         Dropout-201              [-1, 256, 64]               0
+       Attention-202              [-1, 256, 64]               0
+         PreNorm-203              [-1, 256, 64]               0
+       LayerNorm-204              [-1, 256, 64]             128
+       Rearrange-205              [-1, 64, 256]               0
+          Conv1d-206             [-1, 256, 256]          16,640
+             GLU-207             [-1, 128, 256]               0
+          Conv1d-208             [-1, 128, 256]           4,096
+ DepthWiseConv1d-209             [-1, 128, 256]               0
+     BatchNorm1d-210             [-1, 128, 256]             256
+           Swish-211             [-1, 128, 256]               0
+          Conv1d-212              [-1, 64, 256]           8,256
+       Rearrange-213              [-1, 256, 64]               0
+         Dropout-214              [-1, 256, 64]               0
+ConformerConvModule-215              [-1, 256, 64]               0
+       LayerNorm-216              [-1, 256, 64]             128
+          Linear-217             [-1, 256, 256]          16,640
+           Swish-218             [-1, 256, 256]               0
+         Dropout-219             [-1, 256, 256]               0
+          Linear-220              [-1, 256, 64]          16,448
+         Dropout-221              [-1, 256, 64]               0
+     FeedForward-222              [-1, 256, 64]               0
+         PreNorm-223              [-1, 256, 64]               0
+           Scale-224              [-1, 256, 64]               0
+       LayerNorm-225              [-1, 256, 64]             128
+  ConformerBlock-226              [-1, 256, 64]               0
+       LayerNorm-227              [-1, 128, 64]             128
+          Linear-228             [-1, 128, 256]          16,640
+           Swish-229             [-1, 128, 256]               0
+         Dropout-230             [-1, 128, 256]               0
+          Linear-231              [-1, 128, 64]          16,448
+         Dropout-232              [-1, 128, 64]               0
+     FeedForward-233              [-1, 128, 64]               0
+         PreNorm-234              [-1, 128, 64]               0
+           Scale-235              [-1, 128, 64]               0
+       LayerNorm-236              [-1, 128, 64]             128
+          Linear-237              [-1, 128, 64]           4,096
+          Linear-238             [-1, 128, 128]           8,192
+       Embedding-239              [-1, 128, 16]          16,400
+          Linear-240              [-1, 128, 64]           4,160
+         Dropout-241              [-1, 128, 64]               0
+       Attention-242              [-1, 128, 64]               0
+         PreNorm-243              [-1, 128, 64]               0
+       LayerNorm-244              [-1, 128, 64]             128
+       Rearrange-245              [-1, 64, 128]               0
+          Conv1d-246             [-1, 256, 128]          16,640
+             GLU-247             [-1, 128, 128]               0
+          Conv1d-248             [-1, 128, 128]           4,096
+ DepthWiseConv1d-249             [-1, 128, 128]               0
+     BatchNorm1d-250             [-1, 128, 128]             256
+           Swish-251             [-1, 128, 128]               0
+          Conv1d-252              [-1, 64, 128]           8,256
+       Rearrange-253              [-1, 128, 64]               0
+         Dropout-254              [-1, 128, 64]               0
+ConformerConvModule-255              [-1, 128, 64]               0
+       LayerNorm-256              [-1, 128, 64]             128
+          Linear-257             [-1, 128, 256]          16,640
+           Swish-258             [-1, 128, 256]               0
+         Dropout-259             [-1, 128, 256]               0
+          Linear-260              [-1, 128, 64]          16,448
+         Dropout-261              [-1, 128, 64]               0
+     FeedForward-262              [-1, 128, 64]               0
+         PreNorm-263              [-1, 128, 64]               0
+           Scale-264              [-1, 128, 64]               0
+       LayerNorm-265              [-1, 128, 64]             128
+  ConformerBlock-266              [-1, 128, 64]               0
+            TSCB-267         [-1, 64, 256, 128]               0
+   ConstantPad2d-268         [-1, 64, 257, 130]               0
+          Conv2d-269         [-1, 64, 256, 128]          24,640
+  InstanceNorm2d-270         [-1, 64, 256, 128]             128
+           PReLU-271         [-1, 64, 256, 128]              64
+   ConstantPad2d-272        [-1, 128, 258, 130]               0
+          Conv2d-273         [-1, 64, 256, 128]          49,216
+  InstanceNorm2d-274         [-1, 64, 256, 128]             128
+           PReLU-275         [-1, 64, 256, 128]              64
+   ConstantPad2d-276        [-1, 192, 260, 130]               0
+          Conv2d-277         [-1, 64, 256, 128]          73,792
+  InstanceNorm2d-278         [-1, 64, 256, 128]             128
+           PReLU-279         [-1, 64, 256, 128]              64
+   ConstantPad2d-280        [-1, 256, 264, 130]               0
+          Conv2d-281         [-1, 64, 256, 128]          98,368
+  InstanceNorm2d-282         [-1, 64, 256, 128]             128
+           PReLU-283         [-1, 64, 256, 128]              64
+ DilatedDenseNet-284         [-1, 64, 256, 128]               0
+   ConstantPad2d-285         [-1, 64, 256, 130]               0
+          Conv2d-286        [-1, 128, 256, 128]          24,704
+SPConvTranspose2d-287         [-1, 64, 256, 256]               0
+          Conv2d-288          [-1, 3, 256, 256]             579
+  InstanceNorm2d-289          [-1, 3, 256, 256]               6
+           PReLU-290          [-1, 3, 256, 256]               3
+          Conv2d-291          [-1, 3, 256, 256]              12
+    MaskDecoderN-292          [-1, 3, 256, 256]               0
+================================================================
+Total params: 1,305,336
+Trainable params: 1,305,336
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.75
+Forward/backward pass size (MB): 1451.30
+Params size (MB): 4.98
+Estimated Total Size (MB): 1457.03
+----------------------------------------------------------------
+Discriminator Parameters
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1         [-1, 64, 128, 128]           3,136
+            Conv2d-2          [-1, 128, 64, 64]         204,928
+    InstanceNorm2d-3          [-1, 128, 64, 64]               0
+            Conv2d-4          [-1, 256, 32, 32]         524,544
+    InstanceNorm2d-5          [-1, 256, 32, 32]               0
+            Conv2d-6          [-1, 512, 31, 31]       2,097,664
+    InstanceNorm2d-7          [-1, 512, 31, 31]               0
+            Conv2d-8            [-1, 1, 30, 30]           8,193
+================================================================
+Total params: 2,838,465
+Trainable params: 2,838,465
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.75
+Forward/backward pass size (MB): 27.51
+Params size (MB): 10.83
+Estimated Total Size (MB): 39.09
+----------------------------------------------------------------
+14512
+Step [8706/10000000], loss_g: 3.5123, loss_L1: 0.0648, loss_GAN: 0.2688, percep_loss_clean: 0.3403, loss_d1: 0.2550, lr_d:0.00070, lr_g:0.00070 ,Epoch: 1.0
+End of epoch1/200 Time Taken:1561.799569697        Accuracy_best:0 ..Epoch:0
+Step [17413/10000000], loss_g: 2.5325, loss_L1: 0.0411, loss_GAN: 0.4784, percep_loss_clean: 0.1667, loss_d1: 0.3306, lr_d:0.00070, lr_g:0.00070 ,Epoch: 2.0
+End of epoch2/200 Time Taken:1633.1967564650001        Accuracy_best:0 ..Epoch:0
+Step [26120/10000000], loss_g: 3.2679, loss_L1: 0.0571, loss_GAN: 0.4068, percep_loss_clean: 0.8994, loss_d1: 0.2672, lr_d:0.00070, lr_g:0.00070 ,Epoch: 3.0
+End of epoch3/200 Time Taken:1667.5836079300002        Accuracy_best:0 ..Epoch:0
+Step [34827/10000000], loss_g: 2.5797, loss_L1: 0.0467, loss_GAN: 0.2437, percep_loss_clean: 0.3449, loss_d1: 0.2492, lr_d:0.00070, lr_g:0.00070 ,Epoch: 4.0
+End of epoch4/200 Time Taken:1677.8756996299999        Accuracy_best:0 ..Epoch:0
+Step [43534/10000000], loss_g: 1.9298, loss_L1: 0.0331, loss_GAN: 0.2728, percep_loss_clean: 0.2728, loss_d1: 0.2516, lr_d:0.00070, lr_g:0.00070 ,Epoch: 5.0
+End of epoch5/200 Time Taken:1683.577734003        Accuracy_best:0 ..Epoch:0
+Step [52241/10000000], loss_g: 2.4434, loss_L1: 0.0442, loss_GAN: 0.2345, percep_loss_clean: 0.2316, loss_d1: 0.2518, lr_d:0.00070, lr_g:0.00070 ,Epoch: 6.0
+End of epoch6/200 Time Taken:1683.8923423329998        Accuracy_best:0 ..Epoch:0
+Step [60948/10000000], loss_g: 2.3714, loss_L1: 0.0405, loss_GAN: 0.3459, percep_loss_clean: 0.2450, loss_d1: 0.2611, lr_d:0.00070, lr_g:0.00070 ,Epoch: 7.0
+End of epoch7/200 Time Taken:1681.499083484001        Accuracy_best:0 ..Epoch:0
+Step [69655/10000000], loss_g: 4.3623, loss_L1: 0.0616, loss_GAN: 1.2764, percep_loss_clean: 1.5583, loss_d1: 0.0253, lr_d:0.00070, lr_g:0.00070 ,Epoch: 8.0
+End of epoch8/200 Time Taken:1669.7662453379999        Accuracy_best:0 ..Epoch:0
+Step [78362/10000000], loss_g: 1.7506, loss_L1: 0.0264, loss_GAN: 0.4275, percep_loss_clean: 0.1486, loss_d1: 0.2704, lr_d:0.00070, lr_g:0.00070 ,Epoch: 9.0
+End of epoch9/200 Time Taken:1670.6233263230006        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-9-m-s.png
+Denoise_gait2.py:909: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Step [87069/10000000], loss_g: 2.3940, loss_L1: 0.0305, loss_GAN: 0.8655, percep_loss_clean: 0.3648, loss_d1: 0.0479, lr_d:0.00070, lr_g:0.00070 ,Epoch: 10.0
+End of epoch10/200 Time Taken:1672.7526515969985        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 91187.1166.. PSNR'inf': 14.2267.. SSIM1'1': 0.7158.. SSIM2'1': 0.7467.. UQI'1': 0.938..VIF'1': 0.104
+saved ./samples2/n2c/sample-10-n-c.pdf
+Last_savedmdl_epoch:10
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Step [95776/10000000], loss_g: 3.0309, loss_L1: 0.0412, loss_GAN: 0.9624, percep_loss_clean: 1.4069, loss_d1: 0.0139, lr_d:0.00070, lr_g:0.00070 ,Epoch: 11.0
+End of epoch11/200 Time Taken:1664.3951998180019        Accuracy_best:0 ..Epoch:0
+Step [104483/10000000], loss_g: 2.7426, loss_L1: 0.0337, loss_GAN: 1.0535, percep_loss_clean: 0.3688, loss_d1: 0.2064, lr_d:0.00070, lr_g:0.00070 ,Epoch: 12.0
+End of epoch12/200 Time Taken:1671.7884049610002        Accuracy_best:0 ..Epoch:0
+Step [113190/10000000], loss_g: 2.4677, loss_L1: 0.0457, loss_GAN: 0.1795, percep_loss_clean: 0.3186, loss_d1: 0.2774, lr_d:0.00070, lr_g:0.00070 ,Epoch: 13.0
+End of epoch13/200 Time Taken:1671.5486366240002        Accuracy_best:0 ..Epoch:0
+Step [121897/10000000], loss_g: 3.0275, loss_L1: 0.0399, loss_GAN: 1.0279, percep_loss_clean: 0.6500, loss_d1: 0.0033, lr_d:0.00070, lr_g:0.00070 ,Epoch: 14.0
+End of epoch14/200 Time Taken:1669.9530447409998        Accuracy_best:0 ..Epoch:0
+Step [130604/10000000], loss_g: 3.1864, loss_L1: 0.0410, loss_GAN: 1.1309, percep_loss_clean: 0.8285, loss_d1: 0.0064, lr_d:0.00070, lr_g:0.00070 ,Epoch: 15.0
+End of epoch15/200 Time Taken:1672.5326484220022        Accuracy_best:0 ..Epoch:0
+Step [139311/10000000], loss_g: 3.0502, loss_L1: 0.0385, loss_GAN: 1.1160, percep_loss_clean: 1.9519, loss_d1: 0.0111, lr_d:0.00070, lr_g:0.00070 ,Epoch: 16.0
+End of epoch16/200 Time Taken:1672.2941769629979        Accuracy_best:0 ..Epoch:0
+Step [148018/10000000], loss_g: 2.8634, loss_L1: 0.0369, loss_GAN: 1.0041, percep_loss_clean: 2.4076, loss_d1: 0.0071, lr_d:0.00070, lr_g:0.00070 ,Epoch: 17.0
+End of epoch17/200 Time Taken:1679.383270704002        Accuracy_best:0 ..Epoch:0
+Step [156725/10000000], loss_g: 2.3070, loss_L1: 0.0309, loss_GAN: 0.7594, percep_loss_clean: 0.6465, loss_d1: 0.0281, lr_d:0.00070, lr_g:0.00070 ,Epoch: 18.0
+End of epoch18/200 Time Taken:1672.580959908999        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-18-m-s.png
+Denoise_gait2.py:909: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Step [165432/10000000], loss_g: 2.8121, loss_L1: 0.0383, loss_GAN: 0.8911, percep_loss_clean: 1.4305, loss_d1: 0.0123, lr_d:0.00070, lr_g:0.00070 ,Epoch: 19.0
+End of epoch19/200 Time Taken:1683.5379447190026        Accuracy_best:0 ..Epoch:0
+Step [174139/10000000], loss_g: 2.3574, loss_L1: 0.0254, loss_GAN: 1.0837, percep_loss_clean: 0.4382, loss_d1: 0.0039, lr_d:0.00070, lr_g:0.00070 ,Epoch: 20.0
+End of epoch20/200 Time Taken:1680.3439915050003        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 102289.3340.. PSNR'inf': 13.7361.. SSIM1'1': 0.7015.. SSIM2'1': 0.7394.. UQI'1': 0.930..VIF'1': 0.098
+saved ./samples2/n2c/sample-20-n-c.pdf
+Last_savedmdl_epoch:20
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Step [182846/10000000], loss_g: 1.9937, loss_L1: 0.0344, loss_GAN: 0.2724, percep_loss_clean: 0.3840, loss_d1: 0.2521, lr_d:0.00070, lr_g:0.00070 ,Epoch: 21.0
+End of epoch21/200 Time Taken:1680.0815041640017        Accuracy_best:0 ..Epoch:0
+Step [191553/10000000], loss_g: 3.0781, loss_L1: 0.0437, loss_GAN: 0.8889, percep_loss_clean: 0.9077, loss_d1: 0.0610, lr_d:0.00070, lr_g:0.00070 ,Epoch: 22.0
+End of epoch22/200 Time Taken:1683.9582417189959        Accuracy_best:0 ..Epoch:0
+Step [200260/10000000], loss_g: 2.6008, loss_L1: 0.0323, loss_GAN: 0.9726, percep_loss_clean: 2.2893, loss_d1: 0.0043, lr_d:0.00070, lr_g:0.00070 ,Epoch: 23.0
+End of epoch23/200 Time Taken:1685.014447827998        Accuracy_best:0 ..Epoch:0
+Step [208967/10000000], loss_g: 2.1580, loss_L1: 0.0417, loss_GAN: 0.0705, percep_loss_clean: 0.2870, loss_d1: 0.2890, lr_d:0.00070, lr_g:0.00070 ,Epoch: 24.0
+End of epoch24/200 Time Taken:1685.3739259700014        Accuracy_best:0 ..Epoch:0
+Step [217674/10000000], loss_g: 2.1432, loss_L1: 0.0269, loss_GAN: 0.7958, percep_loss_clean: 0.8325, loss_d1: 0.0236, lr_d:0.00070, lr_g:0.00070 ,Epoch: 25.0
+End of epoch25/200 Time Taken:1686.2979566040012        Accuracy_best:0 ..Epoch:0
+Step [226381/10000000], loss_g: 2.2572, loss_L1: 0.0383, loss_GAN: 0.3381, percep_loss_clean: 0.4980, loss_d1: 0.2485, lr_d:0.00070, lr_g:0.00070 ,Epoch: 26.0
+End of epoch26/200 Time Taken:1678.7581720740054        Accuracy_best:0 ..Epoch:0
+Step [235088/10000000], loss_g: 2.4824, loss_L1: 0.0362, loss_GAN: 0.6702, percep_loss_clean: 0.8650, loss_d1: 0.0422, lr_d:0.00070, lr_g:0.00070 ,Epoch: 27.0
+End of epoch27/200 Time Taken:1685.5925293839973        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-27-m-s.png
+Denoise_gait2.py:909: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Step [243795/10000000], loss_g: 3.2385, loss_L1: 0.0444, loss_GAN: 1.0135, percep_loss_clean: 0.6390, loss_d1: 0.0033, lr_d:0.00070, lr_g:0.00070 ,Epoch: 28.0
+End of epoch28/200 Time Taken:1681.9451341480017        Accuracy_best:0 ..Epoch:0
+Step [252502/10000000], loss_g: 2.2921, loss_L1: 0.0270, loss_GAN: 0.9394, percep_loss_clean: 0.8446, loss_d1: 0.0071, lr_d:0.00070, lr_g:0.00070 ,Epoch: 29.0
+End of epoch29/200 Time Taken:1680.8281729579976        Accuracy_best:0 ..Epoch:0
+Step [261209/10000000], loss_g: 3.5189, loss_L1: 0.0515, loss_GAN: 0.9379, percep_loss_clean: 0.8833, loss_d1: 0.0065, lr_d:0.00059, lr_g:0.00059 ,Epoch: 30.0
+End of epoch30/200 Time Taken:1674.8323201090025        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 80211.8465.. PSNR'inf': 14.7979.. SSIM1'1': 0.7510.. SSIM2'1': 0.7767.. UQI'1': 0.946..VIF'1': 0.119
+saved ./samples2/n2c/sample-30-n-c.pdf
+Last_savedmdl_epoch:30
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Step [269916/10000000], loss_g: 2.9910, loss_L1: 0.0423, loss_GAN: 0.8724, percep_loss_clean: 0.9707, loss_d1: 0.0185, lr_d:0.00059, lr_g:0.00059 ,Epoch: 31.0
+End of epoch31/200 Time Taken:1660.649280714002        Accuracy_best:0 ..Epoch:0
+Step [278623/10000000], loss_g: 2.5401, loss_L1: 0.0274, loss_GAN: 1.1659, percep_loss_clean: 1.0439, loss_d1: 0.0114, lr_d:0.00059, lr_g:0.00059 ,Epoch: 32.0
+End of epoch32/200 Time Taken:1667.591635193996        Accuracy_best:0 ..Epoch:0
+Step [287330/10000000], loss_g: 2.2198, loss_L1: 0.0385, loss_GAN: 0.2938, percep_loss_clean: 0.5021, loss_d1: 0.2842, lr_d:0.00059, lr_g:0.00059 ,Epoch: 33.0
+End of epoch33/200 Time Taken:1671.120218390999        Accuracy_best:0 ..Epoch:0
+Step [296037/10000000], loss_g: 1.8505, loss_L1: 0.0178, loss_GAN: 0.9594, percep_loss_clean: 0.6723, loss_d1: 0.0113, lr_d:0.00059, lr_g:0.00059 ,Epoch: 34.0
+End of epoch34/200 Time Taken:1672.2839430599997        Accuracy_best:0 ..Epoch:0
+Step [304744/10000000], loss_g: 2.4998, loss_L1: 0.0276, loss_GAN: 1.1133, percep_loss_clean: 1.1761, loss_d1: 0.0063, lr_d:0.00059, lr_g:0.00059 ,Epoch: 35.0
+End of epoch35/200 Time Taken:1671.5482363379997        Accuracy_best:0 ..Epoch:0
+Step [313451/10000000], loss_g: 2.2349, loss_L1: 0.0238, loss_GAN: 1.0405, percep_loss_clean: 0.8376, loss_d1: 0.0037, lr_d:0.00059, lr_g:0.00059 ,Epoch: 36.0
+End of epoch36/200 Time Taken:1670.7424305719978        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-36-m-s.png
+Denoise_gait2.py:909: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Step [322158/10000000], loss_g: 2.3069, loss_L1: 0.0300, loss_GAN: 0.8009, percep_loss_clean: 0.7123, loss_d1: 0.0273, lr_d:0.00059, lr_g:0.00059 ,Epoch: 37.0
+End of epoch37/200 Time Taken:1671.9006336169987        Accuracy_best:0 ..Epoch:0
+Step [330865/10000000], loss_g: 2.1072, loss_L1: 0.0230, loss_GAN: 0.9510, percep_loss_clean: 0.7995, loss_d1: 0.0155, lr_d:0.00059, lr_g:0.00059 ,Epoch: 38.0
+End of epoch38/200 Time Taken:1668.6372802569967        Accuracy_best:0 ..Epoch:0
+Step [339572/10000000], loss_g: 2.9851, loss_L1: 0.0266, loss_GAN: 1.6526, percep_loss_clean: 0.5701, loss_d1: 0.1390, lr_d:0.00059, lr_g:0.00059 ,Epoch: 39.0
+End of epoch39/200 Time Taken:1670.7469214169978        Accuracy_best:0 ..Epoch:0
+Step [348279/10000000], loss_g: 2.5053, loss_L1: 0.0280, loss_GAN: 1.1036, percep_loss_clean: 0.7381, loss_d1: 0.0305, lr_d:0.00059, lr_g:0.00059 ,Epoch: 40.0
+End of epoch40/200 Time Taken:1666.6479929830093        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 81632.6525.. PSNR'inf': 14.7253.. SSIM1'1': 0.7494.. SSIM2'1': 0.7756.. UQI'1': 0.946..VIF'1': 0.118
+saved ./samples2/n2c/sample-40-n-c.pdf
+Last_savedmdl_epoch:40
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Step [356986/10000000], loss_g: 2.0745, loss_L1: 0.0224, loss_GAN: 0.9497, percep_loss_clean: 0.9283, loss_d1: 0.0029, lr_d:0.00059, lr_g:0.00059 ,Epoch: 41.0
+End of epoch41/200 Time Taken:1673.0805406860018        Accuracy_best:0 ..Epoch:0
+Step [365693/10000000], loss_g: 2.5136, loss_L1: 0.0200, loss_GAN: 1.5093, percep_loss_clean: 0.8910, loss_d1: 0.0423, lr_d:0.00059, lr_g:0.00059 ,Epoch: 42.0
+End of epoch42/200 Time Taken:1674.5083043449995        Accuracy_best:0 ..Epoch:0
+Step [374400/10000000], loss_g: 1.6025, loss_L1: 0.0226, loss_GAN: 0.4695, percep_loss_clean: 0.7481, loss_d1: 0.1923, lr_d:0.00059, lr_g:0.00059 ,Epoch: 43.0
+End of epoch43/200 Time Taken:1676.2437944620033        Accuracy_best:0 ..Epoch:0
+Step [383107/10000000], loss_g: 2.0411, loss_L1: 0.0221, loss_GAN: 0.9317, percep_loss_clean: 0.6963, loss_d1: 0.0053, lr_d:0.00059, lr_g:0.00059 ,Epoch: 44.0
+End of epoch44/200 Time Taken:1675.2414346620062        Accuracy_best:0 ..Epoch:0
+Step [391814/10000000], loss_g: 1.4824, loss_L1: 0.0170, loss_GAN: 0.6290, percep_loss_clean: 0.3819, loss_d1: 0.2149, lr_d:0.00059, lr_g:0.00059 ,Epoch: 45.0
+End of epoch45/200 Time Taken:1674.3264028700069        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-45-m-s.png
+Denoise_gait2.py:909: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Step [400521/10000000], loss_g: 2.5983, loss_L1: 0.0286, loss_GAN: 1.1565, percep_loss_clean: 2.4065, loss_d1: 0.0071, lr_d:0.00059, lr_g:0.00059 ,Epoch: 46.0
+End of epoch46/200 Time Taken:1675.1360169550026        Accuracy_best:0 ..Epoch:0
+Step [409228/10000000], loss_g: 2.3159, loss_L1: 0.0394, loss_GAN: 0.3441, percep_loss_clean: 0.5738, loss_d1: 0.1070, lr_d:0.00059, lr_g:0.00059 ,Epoch: 47.0
+End of epoch47/200 Time Taken:1678.0096768390067        Accuracy_best:0 ..Epoch:0
+Step [417935/10000000], loss_g: 1.2699, loss_L1: 0.0186, loss_GAN: 0.3409, percep_loss_clean: 0.2764, loss_d1: 0.2512, lr_d:0.00059, lr_g:0.00059 ,Epoch: 48.0
+End of epoch48/200 Time Taken:1673.2615673640103        Accuracy_best:0 ..Epoch:0
+Step [426642/10000000], loss_g: 2.4851, loss_L1: 0.0308, loss_GAN: 0.9348, percep_loss_clean: 2.5513, loss_d1: 0.0096, lr_d:0.00059, lr_g:0.00059 ,Epoch: 49.0
+End of epoch49/200 Time Taken:1672.2094130729965        Accuracy_best:0 ..Epoch:0
+Step [435349/10000000], loss_g: 1.7201, loss_L1: 0.0184, loss_GAN: 0.7949, percep_loss_clean: 0.6359, loss_d1: 0.1547, lr_d:0.00059, lr_g:0.00059 ,Epoch: 50.0
+End of epoch50/200 Time Taken:1668.249495172        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 82593.2318.. PSNR'inf': 14.6752.. SSIM1'1': 0.7478.. SSIM2'1': 0.7769.. UQI'1': 0.946..VIF'1': 0.117
+saved ./samples2/n2c/sample-50-n-c.pdf
+Last_savedmdl_epoch:50
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Step [444056/10000000], loss_g: 2.1991, loss_L1: 0.0247, loss_GAN: 0.9584, percep_loss_clean: 0.8970, loss_d1: 0.0033, lr_d:0.00059, lr_g:0.00059 ,Epoch: 51.0
+End of epoch51/200 Time Taken:1670.1873773909902        Accuracy_best:0 ..Epoch:0
+Step [452763/10000000], loss_g: 2.7348, loss_L1: 0.0329, loss_GAN: 1.0860, percep_loss_clean: 0.5716, loss_d1: 0.0042, lr_d:0.00059, lr_g:0.00059 ,Epoch: 52.0
+End of epoch52/200 Time Taken:1670.0859084469994        Accuracy_best:0 ..Epoch:0
+Step [461470/10000000], loss_g: 2.6651, loss_L1: 0.0364, loss_GAN: 0.8397, percep_loss_clean: 0.6860, loss_d1: 0.0264, lr_d:0.00059, lr_g:0.00059 ,Epoch: 53.0
+End of epoch53/200 Time Taken:1666.196291789005        Accuracy_best:0 ..Epoch:0
+Step [470177/10000000], loss_g: 2.7214, loss_L1: 0.0250, loss_GAN: 1.4616, percep_loss_clean: 1.7016, loss_d1: 0.0313, lr_d:0.00059, lr_g:0.00059 ,Epoch: 54.0
+End of epoch54/200 Time Taken:1666.773816262008        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-54-m-s.png
+Denoise_gait2.py:909: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Step [478884/10000000], loss_g: 2.0258, loss_L1: 0.0247, loss_GAN: 0.7857, percep_loss_clean: 0.6457, loss_d1: 0.0331, lr_d:0.00059, lr_g:0.00059 ,Epoch: 55.0
+End of epoch55/200 Time Taken:1671.1875140789925        Accuracy_best:0 ..Epoch:0
+Step [487591/10000000], loss_g: 1.9624, loss_L1: 0.0257, loss_GAN: 0.6750, percep_loss_clean: 0.5140, loss_d1: 0.1559, lr_d:0.00059, lr_g:0.00059 ,Epoch: 56.0
+End of epoch56/200 Time Taken:1671.486566505002        Accuracy_best:0 ..Epoch:0
+Step [496298/10000000], loss_g: 2.1282, loss_L1: 0.0215, loss_GAN: 1.0493, percep_loss_clean: 0.6820, loss_d1: 0.0048, lr_d:0.00059, lr_g:0.00059 ,Epoch: 57.0
+End of epoch57/200 Time Taken:1670.6296862570016        Accuracy_best:0 ..Epoch:0
+Step [505005/10000000], loss_g: 1.6877, loss_L1: 0.0212, loss_GAN: 0.6262, percep_loss_clean: 0.4808, loss_d1: 0.1080, lr_d:0.00059, lr_g:0.00059 ,Epoch: 58.0
+End of epoch58/200 Time Taken:1670.7699691580056        Accuracy_best:0 ..Epoch:0
+Step [513712/10000000], loss_g: 2.2760, loss_L1: 0.0241, loss_GAN: 1.0698, percep_loss_clean: 0.6742, loss_d1: 0.0277, lr_d:0.00059, lr_g:0.00059 ,Epoch: 59.0
+End of epoch59/200 Time Taken:1673.6438471830043        Accuracy_best:0 ..Epoch:0
+Step [522419/10000000], loss_g: 1.6747, loss_L1: 0.0212, loss_GAN: 0.6128, percep_loss_clean: 0.4120, loss_d1: 0.1858, lr_d:0.00051, lr_g:0.00051 ,Epoch: 60.0
+End of epoch60/200 Time Taken:1672.2234439439926        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 78000.0940.. PSNR'inf': 14.9229.. SSIM1'1': 0.7535.. SSIM2'1': 0.7808.. UQI'1': 0.949..VIF'1': 0.120
+saved ./samples2/n2c/sample-60-n-c.pdf
+Last_savedmdl_epoch:60
+savedmdl_epoch:60
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Step [531126/10000000], loss_g: 2.9055, loss_L1: 0.0334, loss_GAN: 1.2307, percep_loss_clean: 0.8673, loss_d1: 0.0121, lr_d:0.00051, lr_g:0.00051 ,Epoch: 61.0
+End of epoch61/200 Time Taken:1674.6348177030013        Accuracy_best:0 ..Epoch:0
+Step [539833/10000000], loss_g: 1.6257, loss_L1: 0.0176, loss_GAN: 0.7432, percep_loss_clean: 0.7802, loss_d1: 0.0174, lr_d:0.00051, lr_g:0.00051 ,Epoch: 62.0
+End of epoch62/200 Time Taken:1672.1546987120091        Accuracy_best:0 ..Epoch:0
+Step [548540/10000000], loss_g: 2.4674, loss_L1: 0.0272, loss_GAN: 1.0960, percep_loss_clean: 2.3900, loss_d1: 0.0068, lr_d:0.00051, lr_g:0.00051 ,Epoch: 63.0
+End of epoch63/200 Time Taken:1666.6604389919958        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-63-m-s.png
+Denoise_gait2.py:909: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Step [557247/10000000], loss_g: 2.4241, loss_L1: 0.0293, loss_GAN: 0.9503, percep_loss_clean: 1.5155, loss_d1: 0.0040, lr_d:0.00051, lr_g:0.00051 ,Epoch: 64.0
+End of epoch64/200 Time Taken:1674.8660437450017        Accuracy_best:0 ..Epoch:0
+Step [565954/10000000], loss_g: 1.9231, loss_L1: 0.0184, loss_GAN: 0.9984, percep_loss_clean: 0.7307, loss_d1: 0.0038, lr_d:0.00051, lr_g:0.00051 ,Epoch: 65.0
+End of epoch65/200 Time Taken:1669.6790528809943        Accuracy_best:0 ..Epoch:0
+Step [574661/10000000], loss_g: 2.5842, loss_L1: 0.0424, loss_GAN: 0.4631, percep_loss_clean: 0.6450, loss_d1: 0.2934, lr_d:0.00051, lr_g:0.00051 ,Epoch: 66.0
+End of epoch66/200 Time Taken:1674.394677328004        Accuracy_best:0 ..Epoch:0
+Step [583368/10000000], loss_g: 1.6741, loss_L1: 0.0202, loss_GAN: 0.6619, percep_loss_clean: 0.2991, loss_d1: 0.0304, lr_d:0.00051, lr_g:0.00051 ,Epoch: 67.0
+End of epoch67/200 Time Taken:1670.7696766599984        Accuracy_best:0 ..Epoch:0
+Step [592075/10000000], loss_g: 2.2346, loss_L1: 0.0220, loss_GAN: 1.1320, percep_loss_clean: 0.7220, loss_d1: 0.0267, lr_d:0.00051, lr_g:0.00051 ,Epoch: 68.0
+End of epoch68/200 Time Taken:1672.1977689089981        Accuracy_best:0 ..Epoch:0
+Step [600782/10000000], loss_g: 1.1359, loss_L1: 0.0219, loss_GAN: 0.0365, percep_loss_clean: 0.4195, loss_d1: 0.3554, lr_d:0.00051, lr_g:0.00051 ,Epoch: 69.0
+End of epoch69/200 Time Taken:1670.2807421329926        Accuracy_best:0 ..Epoch:0
+Step [609489/10000000], loss_g: 3.1072, loss_L1: 0.0417, loss_GAN: 1.0188, percep_loss_clean: 0.7759, loss_d1: 0.0071, lr_d:0.00051, lr_g:0.00051 ,Epoch: 70.0
+End of epoch70/200 Time Taken:1670.7272283649945        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 84932.0518.. PSNR'inf': 14.5579.. SSIM1'1': 0.7450.. SSIM2'1': 0.7733.. UQI'1': 0.944..VIF'1': 0.114
+saved ./samples2/n2c/sample-70-n-c.pdf
+Last_savedmdl_epoch:70
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Step [618196/10000000], loss_g: 3.1907, loss_L1: 0.0444, loss_GAN: 0.9677, percep_loss_clean: 0.8198, loss_d1: 0.0027, lr_d:0.00051, lr_g:0.00051 ,Epoch: 71.0
+End of epoch71/200 Time Taken:1610.9983658200072        Accuracy_best:0 ..Epoch:0
+Step [626903/10000000], loss_g: 2.1023, loss_L1: 0.0361, loss_GAN: 0.2939, percep_loss_clean: 0.5351, loss_d1: 0.1164, lr_d:0.00051, lr_g:0.00051 ,Epoch: 72.0
+End of epoch72/200 Time Taken:1580.9549413700006        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-72-m-s.png
+Denoise_gait2.py:909: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Step [635610/10000000], loss_g: 1.4938, loss_L1: 0.0260, loss_GAN: 0.1888, percep_loss_clean: 0.6518, loss_d1: 0.2290, lr_d:0.00051, lr_g:0.00051 ,Epoch: 73.0
+End of epoch73/200 Time Taken:1584.0587065610016        Accuracy_best:0 ..Epoch:0
+Step [644317/10000000], loss_g: 2.0112, loss_L1: 0.0259, loss_GAN: 0.7161, percep_loss_clean: 0.4939, loss_d1: 0.0178, lr_d:0.00051, lr_g:0.00051 ,Epoch: 74.0
+End of epoch74/200 Time Taken:1578.7820680420118        Accuracy_best:0 ..Epoch:0
+Step [653024/10000000], loss_g: 1.7320, loss_L1: 0.0186, loss_GAN: 0.8014, percep_loss_clean: 0.5781, loss_d1: 0.0103, lr_d:0.00051, lr_g:0.00051 ,Epoch: 75.0
+End of epoch75/200 Time Taken:1581.6735474779998        Accuracy_best:0 ..Epoch:0
+Step [661731/10000000], loss_g: 2.3645, loss_L1: 0.0244, loss_GAN: 1.1433, percep_loss_clean: 0.5829, loss_d1: 0.0148, lr_d:0.00051, lr_g:0.00051 ,Epoch: 76.0
+End of epoch76/200 Time Taken:1577.6582377379964        Accuracy_best:0 ..Epoch:0
+Step [670438/10000000], loss_g: 2.2706, loss_L1: 0.0223, loss_GAN: 1.1454, percep_loss_clean: 1.8835, loss_d1: 0.0063, lr_d:0.00051, lr_g:0.00051 ,Epoch: 77.0
+End of epoch77/200 Time Taken:1574.7601955349965        Accuracy_best:0 ..Epoch:0
+Step [679145/10000000], loss_g: 1.8495, loss_L1: 0.0223, loss_GAN: 0.7288, percep_loss_clean: 0.8657, loss_d1: 0.0239, lr_d:0.00051, lr_g:0.00051 ,Epoch: 78.0
+End of epoch78/200 Time Taken:1575.5757117860194        Accuracy_best:0 ..Epoch:0
+Step [687852/10000000], loss_g: 2.9481, loss_L1: 0.0432, loss_GAN: 0.7822, percep_loss_clean: 1.0933, loss_d1: 0.0231, lr_d:0.00051, lr_g:0.00051 ,Epoch: 79.0
+End of epoch79/200 Time Taken:1584.4656506030005        Accuracy_best:0 ..Epoch:0
+Step [696559/10000000], loss_g: 1.6270, loss_L1: 0.0206, loss_GAN: 0.5970, percep_loss_clean: 0.4209, loss_d1: 0.0463, lr_d:0.00051, lr_g:0.00051 ,Epoch: 80.0
+End of epoch80/200 Time Taken:1577.9461080649926        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 82881.4483.. PSNR'inf': 14.6641.. SSIM1'1': 0.7449.. SSIM2'1': 0.7753.. UQI'1': 0.947..VIF'1': 0.115
+saved ./samples2/n2c/sample-80-n-c.pdf
+Last_savedmdl_epoch:80
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Step [705266/10000000], loss_g: 1.7555, loss_L1: 0.0187, loss_GAN: 0.8168, percep_loss_clean: 0.7860, loss_d1: 0.0115, lr_d:0.00051, lr_g:0.00051 ,Epoch: 81.0
+End of epoch81/200 Time Taken:1585.0388034849893        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-81-m-s.png
+Denoise_gait2.py:909: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Step [713973/10000000], loss_g: 1.7744, loss_L1: 0.0348, loss_GAN: 0.0307, percep_loss_clean: 0.4003, loss_d1: 0.3658, lr_d:0.00051, lr_g:0.00051 ,Epoch: 82.0
+End of epoch82/200 Time Taken:1576.350941561017        Accuracy_best:0 ..Epoch:0
+Step [722680/10000000], loss_g: 2.1277, loss_L1: 0.0255, loss_GAN: 0.8438, percep_loss_clean: 1.9116, loss_d1: 0.0118, lr_d:0.00051, lr_g:0.00051 ,Epoch: 83.0
+End of epoch83/200 Time Taken:1581.6962317989965        Accuracy_best:0 ..Epoch:0
+Step [731387/10000000], loss_g: 1.8284, loss_L1: 0.0192, loss_GAN: 0.8643, percep_loss_clean: 0.6055, loss_d1: 0.0073, lr_d:0.00051, lr_g:0.00051 ,Epoch: 84.0
+End of epoch84/200 Time Taken:1578.8960907290166        Accuracy_best:0 ..Epoch:0
+Step [740094/10000000], loss_g: 1.9020, loss_L1: 0.0213, loss_GAN: 0.8311, percep_loss_clean: 0.7268, loss_d1: 0.0148, lr_d:0.00051, lr_g:0.00051 ,Epoch: 85.0
+End of epoch85/200 Time Taken:1585.2467488539987        Accuracy_best:0 ..Epoch:0
+Step [748801/10000000], loss_g: 2.0786, loss_L1: 0.0352, loss_GAN: 0.3162, percep_loss_clean: 0.6553, loss_d1: 0.1606, lr_d:0.00051, lr_g:0.00051 ,Epoch: 86.0
+End of epoch86/200 Time Taken:1574.6968963640102        Accuracy_best:0 ..Epoch:0
+Step [757508/10000000], loss_g: 2.3448, loss_L1: 0.0258, loss_GAN: 1.0495, percep_loss_clean: 0.8680, loss_d1: 0.0075, lr_d:0.00051, lr_g:0.00051 ,Epoch: 87.0
+End of epoch87/200 Time Taken:1585.2994210869947        Accuracy_best:0 ..Epoch:0
+Step [766215/10000000], loss_g: 1.9510, loss_L1: 0.0294, loss_GAN: 0.4775, percep_loss_clean: 0.9020, loss_d1: 0.0587, lr_d:0.00051, lr_g:0.00051 ,Epoch: 88.0
+End of epoch88/200 Time Taken:1580.0982369569829        Accuracy_best:0 ..Epoch:0
+Step [774922/10000000], loss_g: 2.4133, loss_L1: 0.0281, loss_GAN: 1.0035, percep_loss_clean: 0.7848, loss_d1: 0.0081, lr_d:0.00051, lr_g:0.00051 ,Epoch: 89.0
+End of epoch89/200 Time Taken:1581.429300682008        Accuracy_best:0 ..Epoch:0
+Step [783629/10000000], loss_g: 2.1179, loss_L1: 0.0209, loss_GAN: 1.0664, percep_loss_clean: 0.9686, loss_d1: 0.0053, lr_d:0.00043, lr_g:0.00043 ,Epoch: 90.0
+End of epoch90/200 Time Taken:1578.1393641239847        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 84083.9219.. PSNR'inf': 14.6029.. SSIM1'1': 0.7418.. SSIM2'1': 0.7712.. UQI'1': 0.945..VIF'1': 0.112
+saved ./samples2/n2c/sample-90-n-c.pdf
+Last_savedmdl_epoch:90
+saved ./samples/n2c/sample-90-m-s.png
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:909: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Step [792336/10000000], loss_g: 2.6208, loss_L1: 0.0315, loss_GAN: 1.0411, percep_loss_clean: 0.9782, loss_d1: 0.0205, lr_d:0.00043, lr_g:0.00043 ,Epoch: 91.0
+End of epoch91/200 Time Taken:1584.0339751449937        Accuracy_best:0 ..Epoch:0
+Step [801043/10000000], loss_g: 2.1080, loss_L1: 0.0201, loss_GAN: 1.1023, percep_loss_clean: 0.4184, loss_d1: 0.0141, lr_d:0.00043, lr_g:0.00043 ,Epoch: 92.0
+End of epoch92/200 Time Taken:1588.0070519220026        Accuracy_best:0 ..Epoch:0
+Step [809750/10000000], loss_g: 1.7703, loss_L1: 0.0209, loss_GAN: 0.7235, percep_loss_clean: 0.5262, loss_d1: 0.0944, lr_d:0.00043, lr_g:0.00043 ,Epoch: 93.0
+End of epoch93/200 Time Taken:1576.7920445440104        Accuracy_best:0 ..Epoch:0
+Step [818457/10000000], loss_g: 2.1155, loss_L1: 0.0254, loss_GAN: 0.8412, percep_loss_clean: 1.1714, loss_d1: 0.0179, lr_d:0.00043, lr_g:0.00043 ,Epoch: 94.0
+End of epoch94/200 Time Taken:1572.8219982110022        Accuracy_best:0 ..Epoch:0
+Step [827164/10000000], loss_g: 1.3964, loss_L1: 0.0214, loss_GAN: 0.3238, percep_loss_clean: 0.5422, loss_d1: 0.2152, lr_d:0.00043, lr_g:0.00043 ,Epoch: 95.0
+End of epoch95/200 Time Taken:1575.4176479509915        Accuracy_best:0 ..Epoch:0
+Step [835871/10000000], loss_g: 1.9062, loss_L1: 0.0145, loss_GAN: 1.1775, percep_loss_clean: 0.3617, loss_d1: 0.0075, lr_d:0.00043, lr_g:0.00043 ,Epoch: 96.0
+End of epoch96/200 Time Taken:1581.0871491790167        Accuracy_best:0 ..Epoch:0
+Step [844578/10000000], loss_g: 2.8450, loss_L1: 0.0379, loss_GAN: 0.9458, percep_loss_clean: 1.1643, loss_d1: 0.0034, lr_d:0.00043, lr_g:0.00043 ,Epoch: 97.0
+End of epoch97/200 Time Taken:1580.3710121129989        Accuracy_best:0 ..Epoch:0
+Step [853285/10000000], loss_g: 1.9261, loss_L1: 0.0199, loss_GAN: 0.9252, percep_loss_clean: 1.4785, loss_d1: 0.0047, lr_d:0.00043, lr_g:0.00043 ,Epoch: 98.0
+End of epoch98/200 Time Taken:1614.1041895200033        Accuracy_best:0 ..Epoch:0
+Step [861992/10000000], loss_g: 2.5358, loss_L1: 0.0286, loss_GAN: 1.0961, percep_loss_clean: 1.7618, loss_d1: 0.0038, lr_d:0.00043, lr_g:0.00043 ,Epoch: 99.0
+End of epoch99/200 Time Taken:1646.9631450400047        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-99-m-s.png
+Step [870699/10000000], loss_g: 2.1294, loss_L1: 0.0233, loss_GAN: 0.9597, percep_loss_clean: 1.1272, loss_d1: 0.0093, lr_d:0.00043, lr_g:0.00043 ,Epoch: 100.0
+End of epoch100/200 Time Taken:1646.825058485003        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 78971.4784.. PSNR'inf': 14.8746.. SSIM1'1': 0.7567.. SSIM2'1': 0.7806.. UQI'1': 0.950..VIF'1': 0.116
+saved ./samples2/n2c/sample-100-n-c.pdf
+Last_savedmdl_epoch:100
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:135: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  f = plt.figure()
+Step [879406/10000000], loss_g: 2.1977, loss_L1: 0.0242, loss_GAN: 0.9835, percep_loss_clean: 0.8516, loss_d1: 0.0150, lr_d:0.00043, lr_g:0.00043 ,Epoch: 101.0
+End of epoch101/200 Time Taken:1691.249597696995        Accuracy_best:0 ..Epoch:0
+Step [888113/10000000], loss_g: 1.9605, loss_L1: 0.0200, loss_GAN: 0.9549, percep_loss_clean: 0.7053, loss_d1: 0.0068, lr_d:0.00043, lr_g:0.00043 ,Epoch: 102.0
+End of epoch102/200 Time Taken:1690.1985873220256        Accuracy_best:0 ..Epoch:0
+Step [896820/10000000], loss_g: 1.8904, loss_L1: 0.0175, loss_GAN: 1.0061, percep_loss_clean: 1.5151, loss_d1: 0.0036, lr_d:0.00043, lr_g:0.00043 ,Epoch: 103.0
+End of epoch103/200 Time Taken:1687.7586467689835        Accuracy_best:0 ..Epoch:0
+Step [905527/10000000], loss_g: 2.5981, loss_L1: 0.0319, loss_GAN: 0.9959, percep_loss_clean: 1.0743, loss_d1: 0.0026, lr_d:0.00043, lr_g:0.00043 ,Epoch: 104.0
+End of epoch104/200 Time Taken:1686.16114934301        Accuracy_best:0 ..Epoch:0
+Step [914234/10000000], loss_g: 2.3110, loss_L1: 0.0219, loss_GAN: 1.2117, percep_loss_clean: 0.7376, loss_d1: 0.0286, lr_d:0.00043, lr_g:0.00043 ,Epoch: 105.0
+End of epoch105/200 Time Taken:1687.1523195590125        Accuracy_best:0 ..Epoch:0
+Step [922941/10000000], loss_g: 2.0125, loss_L1: 0.0336, loss_GAN: 0.3271, percep_loss_clean: 0.7937, loss_d1: 0.1770, lr_d:0.00043, lr_g:0.00043 ,Epoch: 106.0
+End of epoch106/200 Time Taken:1690.7774704850162        Accuracy_best:0 ..Epoch:0
+Step [931648/10000000], loss_g: 2.1029, loss_L1: 0.0232, loss_GAN: 0.9389, percep_loss_clean: 0.9708, loss_d1: 0.0036, lr_d:0.00043, lr_g:0.00043 ,Epoch: 107.0
+End of epoch107/200 Time Taken:1684.4539812880103        Accuracy_best:0 ..Epoch:0
+Step [940355/10000000], loss_g: 2.6685, loss_L1: 0.0320, loss_GAN: 1.0670, percep_loss_clean: 0.6251, loss_d1: 0.0043, lr_d:0.00043, lr_g:0.00043 ,Epoch: 108.0
+End of epoch108/200 Time Taken:1685.2074954879936        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-108-m-s.png
+Denoise_gait2.py:909: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:911: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  plt.figure()
+Step [949062/10000000], loss_g: 2.0207, loss_L1: 0.0215, loss_GAN: 0.9406, percep_loss_clean: 1.0429, loss_d1: 0.0042, lr_d:0.00043, lr_g:0.00043 ,Epoch: 109.0
+End of epoch109/200 Time Taken:1688.892994920985        Accuracy_best:0 ..Epoch:0
+Step [957769/10000000], loss_g: 2.1355, loss_L1: 0.0223, loss_GAN: 1.0150, percep_loss_clean: 0.6733, loss_d1: 0.0046, lr_d:0.00043, lr_g:0.00043 ,Epoch: 110.0
+End of epoch110/200 Time Taken:1689.4241152309987        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 85544.9531.. PSNR'inf': 14.5285.. SSIM1'1': 0.7431.. SSIM2'1': 0.7699.. UQI'1': 0.945..VIF'1': 0.111
+saved ./samples2/n2c/sample-110-n-c.pdf
+Last_savedmdl_epoch:110
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:135: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  f = plt.figure()
+Step [966476/10000000], loss_g: 2.1651, loss_L1: 0.0204, loss_GAN: 1.1411, percep_loss_clean: 0.8822, loss_d1: 0.0081, lr_d:0.00043, lr_g:0.00043 ,Epoch: 111.0
+End of epoch111/200 Time Taken:1685.7341666230059        Accuracy_best:0 ..Epoch:0
+Step [975183/10000000], loss_g: 2.0960, loss_L1: 0.0222, loss_GAN: 0.9801, percep_loss_clean: 1.4555, loss_d1: 0.0021, lr_d:0.00043, lr_g:0.00043 ,Epoch: 112.0
+End of epoch112/200 Time Taken:1641.6600276890094        Accuracy_best:0 ..Epoch:0
+Step [983890/10000000], loss_g: 1.8338, loss_L1: 0.0220, loss_GAN: 0.7212, percep_loss_clean: 2.3507, loss_d1: 0.0353, lr_d:0.00043, lr_g:0.00043 ,Epoch: 113.0
+End of epoch113/200 Time Taken:1645.6152367290051        Accuracy_best:0 ..Epoch:0
+Step [992597/10000000], loss_g: 2.0878, loss_L1: 0.0215, loss_GAN: 1.0063, percep_loss_clean: 1.3743, loss_d1: 0.0237, lr_d:0.00043, lr_g:0.00043 ,Epoch: 114.0
+End of epoch114/200 Time Taken:1672.5580963510147        Accuracy_best:0 ..Epoch:0
+Step [1001304/10000000], loss_g: 2.5114, loss_L1: 0.0277, loss_GAN: 1.1217, percep_loss_clean: 1.2993, loss_d1: 0.0058, lr_d:0.00043, lr_g:0.00043 ,Epoch: 115.0
+End of epoch115/200 Time Taken:1685.8823298210045        Accuracy_best:0 ..Epoch:0
+Step [1010011/10000000], loss_g: 2.2919, loss_L1: 0.0276, loss_GAN: 0.9046, percep_loss_clean: 1.2056, loss_d1: 0.0047, lr_d:0.00043, lr_g:0.00043 ,Epoch: 116.0
+End of epoch116/200 Time Taken:1687.8460994659981        Accuracy_best:0 ..Epoch:0
+Step [1018718/10000000], loss_g: 1.8250, loss_L1: 0.0196, loss_GAN: 0.8422, percep_loss_clean: 0.4869, loss_d1: 0.0078, lr_d:0.00043, lr_g:0.00043 ,Epoch: 117.0
+End of epoch117/200 Time Taken:1680.3534204879834        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-117-m-s.png
+Denoise_gait2.py:909: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:911: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  plt.figure()
+Step [1027425/10000000], loss_g: 2.2219, loss_L1: 0.0267, loss_GAN: 0.8810, percep_loss_clean: 0.8249, loss_d1: 0.0083, lr_d:0.00043, lr_g:0.00043 ,Epoch: 118.0
+End of epoch118/200 Time Taken:1686.8203208289924        Accuracy_best:0 ..Epoch:0
+Step [1036132/10000000], loss_g: 1.7444, loss_L1: 0.0198, loss_GAN: 0.7529, percep_loss_clean: 0.6429, loss_d1: 0.0196, lr_d:0.00043, lr_g:0.00043 ,Epoch: 119.0
+End of epoch119/200 Time Taken:1681.784065431013        Accuracy_best:0 ..Epoch:0
+Step [1044839/10000000], loss_g: 2.2222, loss_L1: 0.0223, loss_GAN: 1.1006, percep_loss_clean: 0.9697, loss_d1: 0.0046, lr_d:0.00037, lr_g:0.00037 ,Epoch: 120.0
+End of epoch120/200 Time Taken:1682.2975862780004        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 83015.7947.. PSNR'inf': 14.6623.. SSIM1'1': 0.7504.. SSIM2'1': 0.7742.. UQI'1': 0.947..VIF'1': 0.112
+saved ./samples2/n2c/sample-120-n-c.pdf
+Last_savedmdl_epoch:120
+savedmdl_epoch:120
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:135: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  f = plt.figure()
+Step [1053546/10000000], loss_g: 1.3915, loss_L1: 0.0172, loss_GAN: 0.5295, percep_loss_clean: 0.5432, loss_d1: 0.0735, lr_d:0.00037, lr_g:0.00037 ,Epoch: 121.0
+End of epoch121/200 Time Taken:1682.6382129169942        Accuracy_best:0 ..Epoch:0
+Step [1062253/10000000], loss_g: 1.8547, loss_L1: 0.0206, loss_GAN: 0.8198, percep_loss_clean: 1.1055, loss_d1: 0.0206, lr_d:0.00037, lr_g:0.00037 ,Epoch: 122.0
+End of epoch122/200 Time Taken:1686.0144014020043        Accuracy_best:0 ..Epoch:0
+Step [1070960/10000000], loss_g: 2.5477, loss_L1: 0.0360, loss_GAN: 0.7406, percep_loss_clean: 1.0655, loss_d1: 0.1592, lr_d:0.00037, lr_g:0.00037 ,Epoch: 123.0
+End of epoch123/200 Time Taken:1684.9527445700078        Accuracy_best:0 ..Epoch:0
+Step [1079667/10000000], loss_g: 1.9581, loss_L1: 0.0182, loss_GAN: 1.0414, percep_loss_clean: 1.7519, loss_d1: 0.0047, lr_d:0.00037, lr_g:0.00037 ,Epoch: 124.0
+End of epoch124/200 Time Taken:1690.0648649070063        Accuracy_best:0 ..Epoch:0
+Step [1088374/10000000], loss_g: 1.7245, loss_L1: 0.0187, loss_GAN: 0.7879, percep_loss_clean: 0.5918, loss_d1: 0.0497, lr_d:0.00037, lr_g:0.00037 ,Epoch: 125.0
+End of epoch125/200 Time Taken:1692.28036449902        Accuracy_best:0 ..Epoch:0
+Step [1097081/10000000], loss_g: 2.5447, loss_L1: 0.0361, loss_GAN: 0.7366, percep_loss_clean: 0.7222, loss_d1: 0.0191, lr_d:0.00037, lr_g:0.00037 ,Epoch: 126.0
+End of epoch126/200 Time Taken:1665.3703819120128        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-126-m-s.png
+Denoise_gait2.py:909: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:911: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  plt.figure()
+Step [1105788/10000000], loss_g: 2.3641, loss_L1: 0.0288, loss_GAN: 0.9188, percep_loss_clean: 0.8907, loss_d1: 0.0072, lr_d:0.00037, lr_g:0.00037 ,Epoch: 127.0
+End of epoch127/200 Time Taken:1686.1334126520087        Accuracy_best:0 ..Epoch:0
+Step [1114495/10000000], loss_g: 3.0985, loss_L1: 0.0383, loss_GAN: 1.1784, percep_loss_clean: 1.2221, loss_d1: 0.0237, lr_d:0.00037, lr_g:0.00037 ,Epoch: 128.0
+End of epoch128/200 Time Taken:1687.1191764090036        Accuracy_best:0 ..Epoch:0
+Step [1123202/10000000], loss_g: 2.8273, loss_L1: 0.0358, loss_GAN: 1.0301, percep_loss_clean: 0.9317, loss_d1: 0.0023, lr_d:0.00037, lr_g:0.00037 ,Epoch: 129.0
+End of epoch129/200 Time Taken:1686.4350242079818        Accuracy_best:0 ..Epoch:0
+Step [1131909/10000000], loss_g: 2.0060, loss_L1: 0.0213, loss_GAN: 0.9352, percep_loss_clean: 0.7658, loss_d1: 0.0064, lr_d:0.00037, lr_g:0.00037 ,Epoch: 130.0
+End of epoch130/200 Time Taken:1705.6355229010223        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 83816.6411.. PSNR'inf': 14.6198.. SSIM1'1': 0.7463.. SSIM2'1': 0.7710.. UQI'1': 0.946..VIF'1': 0.111
+saved ./samples2/n2c/sample-130-n-c.pdf
+Last_savedmdl_epoch:130
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:135: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  f = plt.figure()
+Step [1140616/10000000], loss_g: 2.8989, loss_L1: 0.0362, loss_GAN: 1.0816, percep_loss_clean: 1.0525, loss_d1: 0.0045, lr_d:0.00037, lr_g:0.00037 ,Epoch: 131.0
+End of epoch131/200 Time Taken:1712.3877475339978        Accuracy_best:0 ..Epoch:0
+Step [1149323/10000000], loss_g: 1.9496, loss_L1: 0.0195, loss_GAN: 0.9715, percep_loss_clean: 0.6467, loss_d1: 0.0035, lr_d:0.00037, lr_g:0.00037 ,Epoch: 132.0
+End of epoch132/200 Time Taken:1708.7015017810045        Accuracy_best:0 ..Epoch:0
+Step [1158030/10000000], loss_g: 1.7619, loss_L1: 0.0322, loss_GAN: 0.1473, percep_loss_clean: 0.5253, loss_d1: 0.2067, lr_d:0.00037, lr_g:0.00037 ,Epoch: 133.0
+End of epoch133/200 Time Taken:1707.9745354909974        Accuracy_best:0 ..Epoch:0
+Step [1166737/10000000], loss_g: 2.0177, loss_L1: 0.0173, loss_GAN: 1.1434, percep_loss_clean: 1.9857, loss_d1: 0.0070, lr_d:0.00037, lr_g:0.00037 ,Epoch: 134.0
+End of epoch134/200 Time Taken:1711.051426157006        Accuracy_best:0 ..Epoch:0
+Step [1175444/10000000], loss_g: 1.8991, loss_L1: 0.0182, loss_GAN: 0.9838, percep_loss_clean: 0.8603, loss_d1: 0.0034, lr_d:0.00037, lr_g:0.00037 ,Epoch: 135.0
+End of epoch135/200 Time Taken:1707.125531326019        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-135-m-s.png
+Denoise_gait2.py:909: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:911: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  plt.figure()
+Step [1184151/10000000], loss_g: 2.7672, loss_L1: 0.0354, loss_GAN: 0.9916, percep_loss_clean: 1.0198, loss_d1: 0.0040, lr_d:0.00037, lr_g:0.00037 ,Epoch: 136.0
+End of epoch136/200 Time Taken:1705.9323138860054        Accuracy_best:0 ..Epoch:0
+Step [1192858/10000000], loss_g: 2.5387, loss_L1: 0.0325, loss_GAN: 0.9082, percep_loss_clean: 0.6373, loss_d1: 0.0120, lr_d:0.00037, lr_g:0.00037 ,Epoch: 137.0
+End of epoch137/200 Time Taken:1715.2280083359801        Accuracy_best:0 ..Epoch:0
+Step [1201565/10000000], loss_g: 1.7882, loss_L1: 0.0197, loss_GAN: 0.8016, percep_loss_clean: 0.6107, loss_d1: 0.0110, lr_d:0.00037, lr_g:0.00037 ,Epoch: 138.0
+End of epoch138/200 Time Taken:1698.0804532350157        Accuracy_best:0 ..Epoch:0
+Step [1210272/10000000], loss_g: 1.8882, loss_L1: 0.0196, loss_GAN: 0.8997, percep_loss_clean: 1.2098, loss_d1: 0.0048, lr_d:0.00037, lr_g:0.00037 ,Epoch: 139.0
+End of epoch139/200 Time Taken:1708.0103549030027        Accuracy_best:0 ..Epoch:0
+Step [1218979/10000000], loss_g: 2.0944, loss_L1: 0.0224, loss_GAN: 0.9671, percep_loss_clean: 1.0439, loss_d1: 0.0020, lr_d:0.00037, lr_g:0.00037 ,Epoch: 140.0
+End of epoch140/200 Time Taken:1712.3015786210017        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 86111.9993.. PSNR'inf': 14.5033.. SSIM1'1': 0.7429.. SSIM2'1': 0.7686.. UQI'1': 0.945..VIF'1': 0.111
+saved ./samples2/n2c/sample-140-n-c.pdf
+Last_savedmdl_epoch:140
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:135: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  f = plt.figure()
+Step [1227686/10000000], loss_g: 1.6442, loss_L1: 0.0233, loss_GAN: 0.4742, percep_loss_clean: 0.8665, loss_d1: 0.0574, lr_d:0.00037, lr_g:0.00037 ,Epoch: 141.0
+End of epoch141/200 Time Taken:1709.03324720799        Accuracy_best:0 ..Epoch:0
+Step [1236393/10000000], loss_g: 1.9487, loss_L1: 0.0177, loss_GAN: 1.0606, percep_loss_clean: 1.0953, loss_d1: 0.0044, lr_d:0.00037, lr_g:0.00037 ,Epoch: 142.0
+End of epoch142/200 Time Taken:1708.6187800740008        Accuracy_best:0 ..Epoch:0
+Step [1245100/10000000], loss_g: 2.0525, loss_L1: 0.0207, loss_GAN: 1.0091, percep_loss_clean: 1.4683, loss_d1: 0.0016, lr_d:0.00037, lr_g:0.00037 ,Epoch: 143.0
+End of epoch143/200 Time Taken:1710.2139938329929        Accuracy_best:0 ..Epoch:0
+Step [1253807/10000000], loss_g: 1.8865, loss_L1: 0.0243, loss_GAN: 0.6706, percep_loss_clean: 0.6220, loss_d1: 0.0927, lr_d:0.00037, lr_g:0.00037 ,Epoch: 144.0
+End of epoch144/200 Time Taken:1707.6816379640077        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-144-m-s.png
+Denoise_gait2.py:909: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:911: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  plt.figure()
+Step [1262514/10000000], loss_g: 2.1229, loss_L1: 0.0207, loss_GAN: 1.0836, percep_loss_clean: 0.7366, loss_d1: 0.0055, lr_d:0.00037, lr_g:0.00037 ,Epoch: 145.0
+End of epoch145/200 Time Taken:1707.4249136050057        Accuracy_best:0 ..Epoch:0
+Step [1271221/10000000], loss_g: 2.6309, loss_L1: 0.0215, loss_GAN: 1.5464, percep_loss_clean: 2.1413, loss_d1: 0.0603, lr_d:0.00037, lr_g:0.00037 ,Epoch: 146.0
+End of epoch146/200 Time Taken:1711.477181811002        Accuracy_best:0 ..Epoch:0
+Step [1279928/10000000], loss_g: 1.8024, loss_L1: 0.0197, loss_GAN: 0.8114, percep_loss_clean: 1.0384, loss_d1: 0.0101, lr_d:0.00037, lr_g:0.00037 ,Epoch: 147.0
+End of epoch147/200 Time Taken:1711.2097516290087        Accuracy_best:0 ..Epoch:0
+Step [1288635/10000000], loss_g: 1.5013, loss_L1: 0.0206, loss_GAN: 0.4675, percep_loss_clean: 0.7260, loss_d1: 0.0591, lr_d:0.00037, lr_g:0.00037 ,Epoch: 148.0
+End of epoch148/200 Time Taken:1708.3264473309973        Accuracy_best:0 ..Epoch:0
+Step [1297342/10000000], loss_g: 2.4151, loss_L1: 0.0325, loss_GAN: 0.7837, percep_loss_clean: 0.9058, loss_d1: 0.0143, lr_d:0.00037, lr_g:0.00037 ,Epoch: 149.0
+End of epoch149/200 Time Taken:1711.5513587550086        Accuracy_best:0 ..Epoch:0
+Step [1306049/10000000], loss_g: 1.7733, loss_L1: 0.0230, loss_GAN: 0.6214, percep_loss_clean: 0.7687, loss_d1: 0.0818, lr_d:0.00031, lr_g:0.00031 ,Epoch: 150.0
+End of epoch150/200 Time Taken:1699.173483658        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 75391.5261.. PSNR'inf': 15.0793.. SSIM1'1': 0.7626.. SSIM2'1': 0.7833.. UQI'1': 0.952..VIF'1': 0.118
+saved ./samples2/n2c/sample-150-n-c.pdf
+Last_savedmdl_epoch:150
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:135: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  f = plt.figure()
+Step [1314756/10000000], loss_g: 2.5685, loss_L1: 0.0305, loss_GAN: 1.0301, percep_loss_clean: 2.8010, loss_d1: 0.0025, lr_d:0.00031, lr_g:0.00031 ,Epoch: 151.0
+End of epoch151/200 Time Taken:1705.5409100159886        Accuracy_best:0 ..Epoch:0
+Step [1323463/10000000], loss_g: 2.1974, loss_L1: 0.0223, loss_GAN: 1.0797, percep_loss_clean: 0.9222, loss_d1: 0.0034, lr_d:0.00031, lr_g:0.00031 ,Epoch: 152.0
+End of epoch152/200 Time Taken:1710.8427988710173        Accuracy_best:0 ..Epoch:0
+Step [1332170/10000000], loss_g: 1.8202, loss_L1: 0.0170, loss_GAN: 0.9676, percep_loss_clean: 0.9625, loss_d1: 0.0015, lr_d:0.00031, lr_g:0.00031 ,Epoch: 153.0
+End of epoch153/200 Time Taken:1707.8933184909984        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-153-m-s.png
+Denoise_gait2.py:909: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:911: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  plt.figure()
+Step [1340877/10000000], loss_g: 2.0109, loss_L1: 0.0215, loss_GAN: 0.9330, percep_loss_clean: 0.8954, loss_d1: 0.0033, lr_d:0.00031, lr_g:0.00031 ,Epoch: 154.0
+End of epoch154/200 Time Taken:1714.2984862650046        Accuracy_best:0 ..Epoch:0
+Step [1349584/10000000], loss_g: 1.9763, loss_L1: 0.0194, loss_GAN: 1.0045, percep_loss_clean: 0.5760, loss_d1: 0.0043, lr_d:0.00031, lr_g:0.00031 ,Epoch: 155.0
+End of epoch155/200 Time Taken:1710.1044558249705        Accuracy_best:0 ..Epoch:0
+Step [1358291/10000000], loss_g: 2.1633, loss_L1: 0.0239, loss_GAN: 0.9611, percep_loss_clean: 1.2546, loss_d1: 0.0170, lr_d:0.00031, lr_g:0.00031 ,Epoch: 156.0
+End of epoch156/200 Time Taken:1713.8066487050382        Accuracy_best:0 ..Epoch:0
+Step [1366998/10000000], loss_g: 2.8499, loss_L1: 0.0368, loss_GAN: 1.0035, percep_loss_clean: 1.1934, loss_d1: 0.0018, lr_d:0.00031, lr_g:0.00031 ,Epoch: 157.0
+End of epoch157/200 Time Taken:1712.8489402389969        Accuracy_best:0 ..Epoch:0
+Step [1375705/10000000], loss_g: 2.2301, loss_L1: 0.0240, loss_GAN: 1.0200, percep_loss_clean: 1.6763, loss_d1: 0.0017, lr_d:0.00031, lr_g:0.00031 ,Epoch: 158.0
+End of epoch158/200 Time Taken:1710.7089747089776        Accuracy_best:0 ..Epoch:0
+Step [1384412/10000000], loss_g: 1.7827, loss_L1: 0.0202, loss_GAN: 0.7676, percep_loss_clean: 0.8145, loss_d1: 0.0133, lr_d:0.00031, lr_g:0.00031 ,Epoch: 159.0
+End of epoch159/200 Time Taken:1713.1965908909915        Accuracy_best:0 ..Epoch:0
+Step [1393119/10000000], loss_g: 3.1143, loss_L1: 0.0414, loss_GAN: 1.0392, percep_loss_clean: 1.0514, loss_d1: 0.0044, lr_d:0.00031, lr_g:0.00031 ,Epoch: 160.0
+End of epoch160/200 Time Taken:1714.612777813978        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 84859.4724.. PSNR'inf': 14.5698.. SSIM1'1': 0.7448.. SSIM2'1': 0.7695.. UQI'1': 0.945..VIF'1': 0.111
+saved ./samples2/n2c/sample-160-n-c.pdf
+Last_savedmdl_epoch:160
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:135: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  f = plt.figure()
+Step [1401826/10000000], loss_g: 2.1149, loss_L1: 0.0205, loss_GAN: 1.0847, percep_loss_clean: 1.0241, loss_d1: 0.0043, lr_d:0.00031, lr_g:0.00031 ,Epoch: 161.0
+End of epoch161/200 Time Taken:1716.3097392470227        Accuracy_best:0 ..Epoch:0
+Step [1410533/10000000], loss_g: 3.1632, loss_L1: 0.0405, loss_GAN: 1.1371, percep_loss_clean: 0.6692, loss_d1: 0.0237, lr_d:0.00031, lr_g:0.00031 ,Epoch: 162.0
+End of epoch162/200 Time Taken:1696.3214637709898        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-162-m-s.png
+Denoise_gait2.py:909: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:911: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  plt.figure()
+Step [1419240/10000000], loss_g: 2.0171, loss_L1: 0.0230, loss_GAN: 0.8602, percep_loss_clean: 1.1713, loss_d1: 0.0064, lr_d:0.00031, lr_g:0.00031 ,Epoch: 163.0
+End of epoch163/200 Time Taken:1710.6740579149919        Accuracy_best:0 ..Epoch:0
+Step [1427947/10000000], loss_g: 2.1019, loss_L1: 0.0214, loss_GAN: 1.0269, percep_loss_clean: 1.1933, loss_d1: 0.0029, lr_d:0.00031, lr_g:0.00031 ,Epoch: 164.0
+End of epoch164/200 Time Taken:1713.0997027670383        Accuracy_best:0 ..Epoch:0
+Step [1436654/10000000], loss_g: 2.4200, loss_L1: 0.0291, loss_GAN: 0.9587, percep_loss_clean: 0.9415, loss_d1: 0.0030, lr_d:0.00031, lr_g:0.00031 ,Epoch: 165.0
+End of epoch165/200 Time Taken:1717.8466733559617        Accuracy_best:0 ..Epoch:0
+Step [1445361/10000000], loss_g: 2.5341, loss_L1: 0.0294, loss_GAN: 1.0619, percep_loss_clean: 0.9187, loss_d1: 0.0023, lr_d:0.00031, lr_g:0.00031 ,Epoch: 166.0
+End of epoch166/200 Time Taken:1704.9608077380108        Accuracy_best:0 ..Epoch:0
+Step [1454068/10000000], loss_g: 1.9988, loss_L1: 0.0207, loss_GAN: 0.9547, percep_loss_clean: 1.4490, loss_d1: 0.0020, lr_d:0.00031, lr_g:0.00031 ,Epoch: 167.0
+End of epoch167/200 Time Taken:1710.725365979015        Accuracy_best:0 ..Epoch:0
+Step [1462775/10000000], loss_g: 1.8649, loss_L1: 0.0175, loss_GAN: 0.9844, percep_loss_clean: 0.6645, loss_d1: 0.0029, lr_d:0.00031, lr_g:0.00031 ,Epoch: 168.0
+End of epoch168/200 Time Taken:1706.3389755089884        Accuracy_best:0 ..Epoch:0
+Step [1471482/10000000], loss_g: 2.2470, loss_L1: 0.0183, loss_GAN: 1.3246, percep_loss_clean: 1.5434, loss_d1: 0.0314, lr_d:0.00031, lr_g:0.00031 ,Epoch: 169.0
+End of epoch169/200 Time Taken:1706.545475655992        Accuracy_best:0 ..Epoch:0
+Step [1480189/10000000], loss_g: 2.7002, loss_L1: 0.0307, loss_GAN: 1.1607, percep_loss_clean: 1.2858, loss_d1: 0.0202, lr_d:0.00031, lr_g:0.00031 ,Epoch: 170.0
+End of epoch170/200 Time Taken:1708.5006967450026        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 74769.3156.. PSNR'inf': 15.1141.. SSIM1'1': 0.7652.. SSIM2'1': 0.7843.. UQI'1': 0.953..VIF'1': 0.118
+saved ./samples2/n2c/sample-170-n-c.pdf
+Last_savedmdl_epoch:170
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:135: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  f = plt.figure()
+Step [1488896/10000000], loss_g: 2.0193, loss_L1: 0.0202, loss_GAN: 1.0044, percep_loss_clean: 1.3709, loss_d1: 0.0018, lr_d:0.00031, lr_g:0.00031 ,Epoch: 171.0
+End of epoch171/200 Time Taken:1706.388606279972        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-171-m-s.png
+Denoise_gait2.py:909: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:911: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  plt.figure()
+Step [1497603/10000000], loss_g: 1.9728, loss_L1: 0.0198, loss_GAN: 0.9773, percep_loss_clean: 0.7533, loss_d1: 0.0033, lr_d:0.00031, lr_g:0.00031 ,Epoch: 172.0
+End of epoch172/200 Time Taken:1709.0949120900477        Accuracy_best:0 ..Epoch:0
+Step [1506310/10000000], loss_g: 2.7627, loss_L1: 0.0353, loss_GAN: 0.9938, percep_loss_clean: 0.9168, loss_d1: 0.0031, lr_d:0.00031, lr_g:0.00031 ,Epoch: 173.0
+End of epoch173/200 Time Taken:1714.0966538399807        Accuracy_best:0 ..Epoch:0
+Step [1515017/10000000], loss_g: 1.8211, loss_L1: 0.0156, loss_GAN: 1.0400, percep_loss_clean: 0.5400, loss_d1: 0.0024, lr_d:0.00031, lr_g:0.00031 ,Epoch: 174.0
+End of epoch174/200 Time Taken:1693.1953234220273        Accuracy_best:0 ..Epoch:0
+Step [1523724/10000000], loss_g: 2.1321, loss_L1: 0.0192, loss_GAN: 1.1704, percep_loss_clean: 0.7007, loss_d1: 0.0147, lr_d:0.00031, lr_g:0.00031 ,Epoch: 175.0
+End of epoch175/200 Time Taken:1700.014057310007        Accuracy_best:0 ..Epoch:0
+Step [1532431/10000000], loss_g: 2.1271, loss_L1: 0.0212, loss_GAN: 1.0621, percep_loss_clean: 1.3303, loss_d1: 0.0038, lr_d:0.00031, lr_g:0.00031 ,Epoch: 176.0
+End of epoch176/200 Time Taken:1707.6351382130524        Accuracy_best:0 ..Epoch:0
+Step [1541138/10000000], loss_g: 2.2114, loss_L1: 0.0171, loss_GAN: 1.3489, percep_loss_clean: 1.5950, loss_d1: 0.0446, lr_d:0.00031, lr_g:0.00031 ,Epoch: 177.0
+End of epoch177/200 Time Taken:1706.3783660979825        Accuracy_best:0 ..Epoch:0
+Step [1549845/10000000], loss_g: 1.9757, loss_L1: 0.0200, loss_GAN: 0.9702, percep_loss_clean: 0.9895, loss_d1: 0.0014, lr_d:0.00031, lr_g:0.00031 ,Epoch: 178.0
+End of epoch178/200 Time Taken:1710.338306818041        Accuracy_best:0 ..Epoch:0
+Step [1558552/10000000], loss_g: 2.2826, loss_L1: 0.0241, loss_GAN: 1.0709, percep_loss_clean: 0.9031, loss_d1: 0.0026, lr_d:0.00031, lr_g:0.00031 ,Epoch: 179.0
+End of epoch179/200 Time Taken:1711.4069798099808        Accuracy_best:0 ..Epoch:0
+Step [1567259/10000000], loss_g: 1.9919, loss_L1: 0.0183, loss_GAN: 1.0760, percep_loss_clean: 0.6392, loss_d1: 0.0021, lr_d:0.00026, lr_g:0.00026 ,Epoch: 180.0
+End of epoch180/200 Time Taken:1711.3815486599924        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 78272.6565.. PSNR'inf': 14.9184.. SSIM1'1': 0.7573.. SSIM2'1': 0.7777.. UQI'1': 0.950..VIF'1': 0.114
+saved ./samples2/n2c/sample-180-n-c.pdf
+Last_savedmdl_epoch:180
+saved ./samples/n2c/sample-180-m-s.png
+savedmdl_epoch:180
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:135: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  f = plt.figure()
+Denoise_gait2.py:909: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:911: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  plt.figure()
+Step [1575966/10000000], loss_g: 2.8743, loss_L1: 0.0374, loss_GAN: 0.9999, percep_loss_clean: 1.0453, loss_d1: 0.0017, lr_d:0.00026, lr_g:0.00026 ,Epoch: 181.0
+End of epoch181/200 Time Taken:1708.9247657650267        Accuracy_best:0 ..Epoch:0
+Step [1584673/10000000], loss_g: 2.4922, loss_L1: 0.0305, loss_GAN: 0.9628, percep_loss_clean: 1.1478, loss_d1: 0.0020, lr_d:0.00026, lr_g:0.00026 ,Epoch: 182.0
+End of epoch182/200 Time Taken:1711.5157035689917        Accuracy_best:0 ..Epoch:0
+Step [1593380/10000000], loss_g: 2.2023, loss_L1: 0.0219, loss_GAN: 1.1016, percep_loss_clean: 1.0829, loss_d1: 0.0040, lr_d:0.00026, lr_g:0.00026 ,Epoch: 183.0
+End of epoch183/200 Time Taken:1702.2867950630025        Accuracy_best:0 ..Epoch:0
+Step [1602087/10000000], loss_g: 2.0478, loss_L1: 0.0195, loss_GAN: 1.0678, percep_loss_clean: 0.5338, loss_d1: 0.0214, lr_d:0.00026, lr_g:0.00026 ,Epoch: 184.0
+End of epoch184/200 Time Taken:1644.10543293698        Accuracy_best:0 ..Epoch:0
+Step [1610794/10000000], loss_g: 1.9685, loss_L1: 0.0181, loss_GAN: 1.0577, percep_loss_clean: 0.7376, loss_d1: 0.0060, lr_d:0.00026, lr_g:0.00026 ,Epoch: 185.0
+End of epoch185/200 Time Taken:1618.9568460599985        Accuracy_best:0 ..Epoch:0
+Step [1619501/10000000], loss_g: 1.8652, loss_L1: 0.0228, loss_GAN: 0.7217, percep_loss_clean: 0.7760, loss_d1: 0.0176, lr_d:0.00026, lr_g:0.00026 ,Epoch: 186.0
+End of epoch186/200 Time Taken:1616.6279543620185        Accuracy_best:0 ..Epoch:0
+Step [1628208/10000000], loss_g: 2.0601, loss_L1: 0.0246, loss_GAN: 0.8227, percep_loss_clean: 1.8710, loss_d1: 0.0115, lr_d:0.00026, lr_g:0.00026 ,Epoch: 187.0
+End of epoch187/200 Time Taken:1611.8069408209994        Accuracy_best:0 ..Epoch:0
+Step [1636915/10000000], loss_g: 2.1276, loss_L1: 0.0191, loss_GAN: 1.1636, percep_loss_clean: 1.4737, loss_d1: 0.0124, lr_d:0.00026, lr_g:0.00026 ,Epoch: 188.0
+End of epoch188/200 Time Taken:1615.7214886529837        Accuracy_best:0 ..Epoch:0
+Step [1645622/10000000], loss_g: 1.8965, loss_L1: 0.0178, loss_GAN: 1.0033, percep_loss_clean: 0.5391, loss_d1: 0.0057, lr_d:0.00026, lr_g:0.00026 ,Epoch: 189.0
+End of epoch189/200 Time Taken:1606.670783004025        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-189-m-s.png
+Step [1654329/10000000], loss_g: 1.8801, loss_L1: 0.0194, loss_GAN: 0.9045, percep_loss_clean: 0.7046, loss_d1: 0.0059, lr_d:0.00026, lr_g:0.00026 ,Epoch: 190.0
+End of epoch190/200 Time Taken:1611.4487856669584        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 78313.6082.. PSNR'inf': 14.9170.. SSIM1'1': 0.7543.. SSIM2'1': 0.7763.. UQI'1': 0.950..VIF'1': 0.115
+saved ./samples2/n2c/sample-190-n-c.pdf
+Last_savedmdl_epoch:190
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:135: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  f = plt.figure()
+Step [1663036/10000000], loss_g: 2.0264, loss_L1: 0.0188, loss_GAN: 1.0798, percep_loss_clean: 0.9928, loss_d1: 0.0239, lr_d:0.00026, lr_g:0.00026 ,Epoch: 191.0
+End of epoch191/200 Time Taken:1606.927972451027        Accuracy_best:0 ..Epoch:0
+Step [1671743/10000000], loss_g: 2.4613, loss_L1: 0.0289, loss_GAN: 1.0111, percep_loss_clean: 1.2717, loss_d1: 0.0029, lr_d:0.00026, lr_g:0.00026 ,Epoch: 192.0
+End of epoch192/200 Time Taken:1611.4350079610012        Accuracy_best:0 ..Epoch:0
+Step [1680450/10000000], loss_g: 2.1649, loss_L1: 0.0237, loss_GAN: 0.9731, percep_loss_clean: 1.7954, loss_d1: 0.0011, lr_d:0.00026, lr_g:0.00026 ,Epoch: 193.0
+End of epoch193/200 Time Taken:1610.9653226769879        Accuracy_best:0 ..Epoch:0
+Step [1689157/10000000], loss_g: 2.2254, loss_L1: 0.0249, loss_GAN: 0.9745, percep_loss_clean: 1.5183, loss_d1: 0.0026, lr_d:0.00026, lr_g:0.00026 ,Epoch: 194.0
+End of epoch194/200 Time Taken:1598.6993627059855        Accuracy_best:0 ..Epoch:0
+Step [1697864/10000000], loss_g: 1.9964, loss_L1: 0.0174, loss_GAN: 1.1227, percep_loss_clean: 0.9420, loss_d1: 0.0484, lr_d:0.00026, lr_g:0.00026 ,Epoch: 195.0
+End of epoch195/200 Time Taken:1602.383625062008        Accuracy_best:0 ..Epoch:0
+Step [1706571/10000000], loss_g: 2.2293, loss_L1: 0.0232, loss_GAN: 1.0661, percep_loss_clean: 0.9604, loss_d1: 0.0018, lr_d:0.00026, lr_g:0.00026 ,Epoch: 196.0
+End of epoch196/200 Time Taken:1579.5648775119917        Accuracy_best:0 ..Epoch:0
+Step [1715278/10000000], loss_g: 2.0661, loss_L1: 0.0208, loss_GAN: 1.0209, percep_loss_clean: 0.7562, loss_d1: 0.0025, lr_d:0.00026, lr_g:0.00026 ,Epoch: 197.0
+End of epoch197/200 Time Taken:1572.246085879975        Accuracy_best:0 ..Epoch:0
+Step [1723985/10000000], loss_g: 2.1809, loss_L1: 0.0265, loss_GAN: 0.8441, percep_loss_clean: 2.1721, loss_d1: 0.0095, lr_d:0.00026, lr_g:0.00026 ,Epoch: 198.0
+End of epoch198/200 Time Taken:1586.1859797419747        Accuracy_best:0 ..Epoch:0
+saved ./samples/n2c/sample-198-m-s.png
+Denoise_gait2.py:909: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:911: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  plt.figure()
+Step [1732692/10000000], loss_g: 2.7810, loss_L1: 0.0328, loss_GAN: 1.1344, percep_loss_clean: 0.8756, loss_d1: 0.0057, lr_d:0.00026, lr_g:0.00026 ,Epoch: 199.0
+End of epoch199/200 Time Taken:1581.8974263810087        Accuracy_best:0 ..Epoch:0
+Step [1741399/10000000], loss_g: 2.1327, loss_L1: 0.0223, loss_GAN: 1.0069, percep_loss_clean: 2.0186, loss_d1: 0.0023, lr_d:0.00026, lr_g:0.00026 ,Epoch: 200.0
+End of epoch200/200 Time Taken:1583.426891266019        Accuracy_best:0 ..Epoch:0
+i: 37.0000.. MSE'0': 83213.6306.. PSNR'inf': 14.6577.. SSIM1'1': 0.7444.. SSIM2'1': 0.7680.. UQI'1': 0.946..VIF'1': 0.111
+saved ./samples2/n2c/sample-200-n-c.pdf
+Last_savedmdl_epoch:200
+i: 37.0000.. MSE'0': 83213.6306.. PSNR'inf': 14.6577.. SSIM1'1': 0.7444.. SSIM2'1': 0.7680.. UQI'1': 0.946..VIF'1': 0.111
+saved ./samples2/n2c/sample-1741400-n-c.pdf
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:135: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  f = plt.figure()
+Denoise_gait2.py:134: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, merged)
+Denoise_gait2.py:135: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  f = plt.figure()
+Denoise_gait2.py:201: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path, fake_img)
+Denoise_gait2.py:203: DeprecationWarning:     `imsave` is deprecated!
+    `imsave` is deprecated in SciPy 1.0.0, and will be removed in 1.2.0.
+    Use ``imageio.imwrite`` instead.
+  scipy.misc.imsave(path2, ref_img)
+FID:  27.76313260655506
+
+[]
+[]
+[]
+Traceback (most recent call last):
+  File "Denoise_gait2.py", line 1024, in <module>
+    prog()
+  File "Denoise_gait2.py", line 1016, in prog
+    imageio.mimsave(sample_path_c2n+'/movie_c2n.gif', image_list12,duration=1)
+  File "/no_backups/s1411/.pyenv/versions/testvenv/lib/python3.7/site-packages/imageio/core/functions.py", line 284, in mimwrite
+    return file.write(ims, **kwargs)
+  File "/no_backups/s1411/.pyenv/versions/testvenv/lib/python3.7/site-packages/imageio/core/legacy_plugin_wrapper.py", line 171, in write
+    raise RuntimeError("Zero images were written.")
+RuntimeError: Zero images were written.
